@@ -1,0 +1,4 @@
+numpy>=2.0   # numpy.trapezoid
+scipy>=1.10
+# optional, only for scripts/check_A3_highprec.py:
+# mpmath>=1.3

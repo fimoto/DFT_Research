@@ -1,0 +1,114 @@
+% Main-text Fig. 3: diagrams of the first-order exchange polarization (top row)
+% and of the energies built from it (bottom row).
+%
+% Build:  pdflatex fig3_exchange_response.tex   (or: python make_figures.py)
+% The figure is drawn at its printed width, 0.9\textwidth = 0.9 x 153 mm,
+% so that \includegraphics[width=0.9\textwidth] does not rescale it.
+% Font sizes: \titlefont for the panel titles, \labelfont for W_lambda.
+\documentclass[border=0pt]{standalone}
+\usepackage{amsmath,bm}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing,decorations.markings,arrows.meta}
+
+\newcommand{\titlefont}{\fontsize{9}{11}\selectfont}
+\newcommand{\labelfont}{\fontsize{8.5}{10}\selectfont}
+
+\tikzset{
+  prop/.style={line width=0.7pt, postaction={decorate},
+    decoration={markings, mark=at position 0.55 with {\arrow{Stealth[length=3.2pt,width=2.8pt]}}}},
+  bare/.style={line width=0.5pt, decorate,
+    decoration={snake, amplitude=0.55mm, segment length=1.4mm}},
+  screened/.style={line width=0.35pt, double, double distance=0.8pt, decorate,
+    decoration={snake, amplitude=0.55mm, segment length=1.6mm}},
+  probe/.style={line width=0.5pt, dash pattern=on 1.6pt off 1.2pt},
+  vtx/.style={circle, fill, inner sep=0pt, minimum size=2.4pt},
+}
+
+% Geometry of the bubble: ellipse with semi-axes \rx, \ry centred at (0,0).
+\def\rx{1.05}
+\def\ry{0.70}
+
+% Arc of the ellipse from angle #1 to angle #2 (degrees), with an arrow.
+\newcommand{\earc}[2]{\draw[prop] ({\rx*cos(#1)},{\ry*sin(#1)}) arc[start angle=#1, end angle=#2, x radius=\rx, y radius=\ry];}
+
+% Density probes at the two outer vertices.
+\newcommand{\probes}{%
+  \draw[probe] (-\rx-0.38,0) -- (-\rx,0);
+  \draw[probe] (\rx,0) -- (\rx+0.38,0);}
+
+% Outer vertices.
+\newcommand{\outervertices}{\node[vtx] at (-\rx,0) {}; \node[vtx] at (\rx,0) {};}
+
+% (a) vertex correction: four arcs and a bare line across the bubble.
+\newcommand{\vertexdiagram}{%
+  \earc{180}{90}\earc{90}{0}\earc{0}{-90}\earc{-90}{-180}
+  \draw[bare] (0,\ry) -- (0,-\ry);
+  \node[vtx] at (0,\ry) {}; \node[vtx] at (0,-\ry) {};
+  \outervertices}
+
+% (b) self-energy on the upper propagator; #1 = +1 (upper) or -1 (lower).
+\newcommand{\sediagram}[1]{%
+  \begin{scope}[yscale=#1]
+    \earc{180}{130}
+    \draw[prop] ({\rx*cos(130)},{\ry*sin(130)}) -- ({\rx*cos(50)},{\ry*sin(50)});
+    \earc{50}{0}
+    \earc{0}{-180}
+    \draw[bare] ({\rx*cos(130)},{\ry*sin(130)}) .. controls ({\rx*cos(130)},{\ry*sin(130)+0.42})
+       and ({\rx*cos(50)},{\ry*sin(50)+0.42}) .. ({\rx*cos(50)},{\ry*sin(50)});
+    \node[vtx] at ({\rx*cos(130)},{\ry*sin(130)}) {};
+    \node[vtx] at ({\rx*cos(50)},{\ry*sin(50)}) {};
+  \end{scope}
+  \outervertices}
+
+% The screened line W_lambda closing a diagram (bottom row).
+\newcommand{\closing}{%
+  \draw[screened] (-\rx,0) .. controls (-\rx-0.15,-1.0) and (-0.75,-1.35) .. (-0.28,-1.38);
+  \draw[screened] (\rx,0) .. controls (\rx+0.15,-1.0) and (0.75,-1.35) .. (0.28,-1.38);
+  \node[font=\labelfont, inner sep=0pt] at (0,-1.38) {$W_\lambda$};}
+
+% Lower self-energy as a mirror image: the arrows must still run the same way
+% around the loop, so the lower diagram is drawn with reversed arcs.
+\newcommand{\sediagramlower}{%
+  \earc{180}{0}
+  \earc{0}{-50}
+  \draw[prop] ({\rx*cos(-50)},{\ry*sin(-50)}) -- ({\rx*cos(-130)},{\ry*sin(-130)});
+  \earc{-130}{-180}
+  \draw[bare] ({\rx*cos(-130)},{\ry*sin(-130)}) .. controls ({\rx*cos(-130)},{\ry*sin(-130)-0.42})
+     and ({\rx*cos(-50)},{\ry*sin(-50)-0.42}) .. ({\rx*cos(-50)},{\ry*sin(-50)});
+  \node[vtx] at ({\rx*cos(-130)},{\ry*sin(-130)}) {};
+  \node[vtx] at ({\rx*cos(-50)},{\ry*sin(-50)}) {};
+  \outervertices}
+
+\begin{document}
+\begin{tikzpicture}[x=1cm,y=1cm]
+  % 0.9 \textwidth = 137.7 mm; three columns 4.59 cm apart.
+  \def\dx{4.59}
+  \path[use as bounding box] (-2.295,-4.12) rectangle (2*\dx+2.295,1.35);
+  % top row
+  \begin{scope}[shift={(0,0)}]
+    \node[font=\titlefont] at (0,1.10) {(a) Vertex correction};
+    \vertexdiagram \probes
+  \end{scope}
+  \begin{scope}[shift={(\dx,0)}]
+    \node[font=\titlefont] at (0,1.10) {(b) Upper self-energy};
+    \sediagram{1} \probes
+  \end{scope}
+  \begin{scope}[shift={(2*\dx,0)}]
+    \node[font=\titlefont] at (0,1.10) {(c) Lower self-energy};
+    \sediagramlower \probes
+  \end{scope}
+  % bottom row
+  \begin{scope}[shift={(0,-2.50)}]
+    \node[font=\titlefont] at (0,1.10) {(d) Kite};
+    \vertexdiagram \closing
+  \end{scope}
+  \begin{scope}[shift={(\dx,-2.50)}]
+    \node[font=\titlefont] at (0,1.10) {(e) Upper insertion};
+    \sediagram{1} \closing
+  \end{scope}
+  \begin{scope}[shift={(2*\dx,-2.50)}]
+    \node[font=\titlefont] at (0,1.10) {(f) Lower insertion};
+    \sediagramlower \closing
+  \end{scope}
+\end{tikzpicture}
+\end{document}

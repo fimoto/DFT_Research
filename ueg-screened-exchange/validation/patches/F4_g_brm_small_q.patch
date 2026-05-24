@@ -1,0 +1,22 @@
+--- external/benites_direct.py	(2026-09-29)
++++ external/benites_direct.py	(proposed, not applied; same change needed in pysecdec_kite/kite_kernel.hpp brm_lindhard_g() and the Fortran kernels)
+@@ def g_brm(q: np.ndarray, nu: np.ndarray) -> np.ndarray:
+     q, nu = np.broadcast_arrays(np.asarray(q, float), np.abs(np.asarray(nu, float)))
+     out = np.empty_like(q)
+-    qsafe = np.maximum(q, 1.0e-14)
+-    zero_q = (qsafe < 1.0e-13) & (nu < 1.0e-13)   # removable endpoint: g(0,0) = 2
+-    out[zero_q] = 2.0
+-    rest = ~zero_q
+-    if np.any(rest):
+-        out[rest] = 2.0 * _lindhard_G(qsafe[rest], nu[rest])
++    # Only the exact endpoint q = 0 is special.  For q > 0 the small-q behaviour
++    # depends on the ratio nu/q (g -> 2[1 - z arctan(1/z)], z = nu/q), which the
++    # delegated evaluation reproduces; replacing it by the static value 2 whenever
++    # q, nu < 1e-13 was incorrect for finite nu/q (audit F4, 1 Oct 2026).
++    q0 = q <= 0.0
++    out[q0 & (nu == 0.0)] = 2.0          # static long-wavelength limit
++    out[q0 & (nu > 0.0)] = 0.0           # lim_{q->0} at fixed nu > 0
++    rest = ~q0
++    if np.any(rest):
++        out[rest] = 2.0 * _lindhard_G(q[rest], nu[rest])
+     return out

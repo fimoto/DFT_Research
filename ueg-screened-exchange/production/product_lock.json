@@ -1,0 +1,176 @@
+{
+  "figure_revision": "2026-09-29: reviewed figure redesign; unchanged existing energy tables and numerical surface; paired polarization differences added.",
+  "history": [
+    {
+      "date": "2026-09-17",
+      "products_changed": [
+        "figs/fig_residuals.pdf",
+        "data/tables.json",
+        "prb/figs/fig_residuals.pdf",
+        "figs/data/map.dat",
+        "figs/data/prb_fig3_lowdensity_points.dat",
+        "figs/data/prb_fig5_residuals.dat",
+        "production/generated/tableI.csv",
+        "production/generated/summary.json",
+        "production/generated/tableIV.csv"
+      ],
+      "reason": "B1 of the final audit: integral form of dg/dnu for q >= 3 in external/benites_direct.py; all 134 records recomputed, 18 change by at most 1.9e-13 relative; printed tables and macros unchanged"
+    },
+    {
+      "after_sha256": {
+        "figs/data/prb_fig2_inner_profile.dat": "b4d19de72742676ecb5f768b6c926bae4f886ecb4e4c6f5601d6dc90f979f079",
+        "figs/data/prb_fig2_shell_points.dat": "6d7c9ed3e4515d7ba8a8fe48494e1e1a7b51713aa0dabf2ebc3085612ed20ea5",
+        "figs/fig_shell.pdf": "f38e03c93f6629dbad5104899614635617f630270c646584a4409f9913ab5e43",
+        "prb/figs/fig_shell.pdf": "f38e03c93f6629dbad5104899614635617f630270c646584a4409f9913ab5e43"
+      },
+      "before_sha256": {
+        "figs/data/prb_fig2_inner_profile.dat": "704f22238d583c7da260b621258eed51c1fc46deb707081dca8af2f3fe95f656",
+        "figs/data/prb_fig2_shell_points.dat": "767f8ba118a3e67220e7cc584aa5fc248916dfd6ba9ac93a01a09526daf9e2f4",
+        "figs/fig_shell.pdf": "27a318e65b06faf0753f4eb9cafb15d5e29c6a03fe758e4982d86a773eacbac0",
+        "prb/figs/fig_shell.pdf": "27a318e65b06faf0753f4eb9cafb15d5e29c6a03fe758e4982d86a773eacbac0"
+      },
+      "date": "2026-09-28",
+      "products_changed": [
+        "figs/fig_shell.pdf",
+        "prb/figs/fig_shell.pdf",
+        "figs/data/prb_fig2_shell_points.dat",
+        "figs/data/prb_fig2_inner_profile.dat"
+      ],
+      "reason": "Synchronize Fig. 3 with approved manuscript: all 48 sampled points in residual panel; 3-sigma selection remains only on log-magnitude panels. Update profile/axis labels, residual ylim, figure-number headers and PDF date. Raw numerical records, arrays, coefficients, tables, macros and other plots are unchanged."
+    },
+    {
+      "after_sha256": {
+        "figs/data/prb_fig3_brm_published.dat": "57e7ba3294360bdaaf3bb2656544abd6aca602a416f78719a06c6bea03a79f5d",
+        "figs/data/prb_fig3_lowdensity_curves.dat": "87b5e2de206badd45e8f17fab1c4a871236fcb3b2b97eb4c26727d6ffe71ee48",
+        "figs/data/prb_fig3_lowdensity_points.dat": "cd33f1bed40da93492a1d78fd689a45673e260c223784e2be6dbde0e171eccc2",
+        "figs/data/prb_fig4_map_crossing.dat": "873f4a950670242bac17588cb7e4dd1a26cb1d052f0bb117af41ce527f6deea2",
+        "figs/data/prb_fig4_map_surface.dat": "662c9a914c2181ccd1516106be66ad53f5c499e03d8ce65aaf3ef032db9fe302",
+        "figs/data/prb_fig5_residuals.dat": "828c94272daa6174834c86cc531bede68216bed1b94a12daf3ef5c1c134cc715"
+      },
+      "before_sha256": {
+        "figs/data/prb_fig3_brm_published.dat": "def29ad19c09c2f5a590cf86863a2dc81c39f9e106ef36039e7d28d989575e96",
+        "figs/data/prb_fig3_lowdensity_curves.dat": "05666b95b35e23fe19b35c336f471329f407fd5ce8e4f3ff9d882935942c802f",
+        "figs/data/prb_fig3_lowdensity_points.dat": "e2d4840116c0e6c58171774dcd55c2169da8118abf75e774f01778781c9cf9ab",
+        "figs/data/prb_fig4_map_crossing.dat": "83580d3cc104d6e41918e60d00fb5a37635ccec733e5c470b7fcb0064934ef8f",
+        "figs/data/prb_fig4_map_surface.dat": "7e36674d88dcc5fc994d084198239411e69b5ffd977296458b14565fc0eed912",
+        "figs/data/prb_fig5_residuals.dat": "9b5ed6fa55469087fced1508344417c0161e267038df3d8e3f02ca79fb8f204f"
+      },
+      "date": "2026-09-28",
+      "products_changed": [
+        "figs/data/prb_fig5_residuals.dat",
+        "figs/data/prb_fig3_brm_published.dat",
+        "figs/data/prb_fig3_lowdensity_points.dat",
+        "figs/data/prb_fig4_map_surface.dat",
+        "figs/data/prb_fig3_lowdensity_curves.dat",
+        "figs/data/prb_fig4_map_crossing.dat"
+      ],
+      "reason": "Correct data-file header references to final PRB figures4(lowdensity),5(map),8(scaledresiduals). Every numerical data row and every generated PDF/table/macro unchanged."
+    },
+    {
+      "after_sha256": {
+        "figs/data/prb_fig2_shell_points.dat": "eceb86111ea3db8a6fc3b45da58867ddfc71d3623a6ebf87ab1552235a75d75b",
+        "figs/data/prb_fig3_brm_published.dat": "6f411d094f5a6ce97488588ea0f1b12bb8f1a5e0de29db700f199bb2db71131f",
+        "figs/data/prb_fig3_lowdensity_points.dat": "26da802d82d915a620dd5c96ededc8ee25c9b90b814119825f3c8d0d72b9fcce",
+        "figs/data/prb_fig4_map_surface.dat": "b35500fa69ef37d3eed13e9c262788898e235d34cc3f7658e56d6fd692c06eaf",
+        "figs/data/prb_fig5_residuals.dat": "de750666c8c2cc4540690d4a3135130264bc12f77ca3063b40ba4c10bf206eb7",
+        "figs/fig_lowdensity.pdf": "6760f1aa4c8d61e9e75300b09f808327bd0a4908779db5b1265d247ac167b1d4",
+        "figs/fig_map.pdf": "76d0e75857104c528f9d27f0af45650d7f05f24857f2e540c5bf0773c1bc42ff",
+        "figs/fig_residuals.pdf": "e6f24c3f517b2d3c37dbd25bc686ed6dcbcd920148ed593ab6289b6ef1c3128c",
+        "figs/fig_shell.pdf": "e907d7ae94d0bf4834a126dc62fc4d8afa36d787efabbfd6d2e1ef3ac2d1fe51",
+        "prb/figs/fig_lowdensity.pdf": "6760f1aa4c8d61e9e75300b09f808327bd0a4908779db5b1265d247ac167b1d4",
+        "prb/figs/fig_map.pdf": "76d0e75857104c528f9d27f0af45650d7f05f24857f2e540c5bf0773c1bc42ff",
+        "prb/figs/fig_residuals.pdf": "e6f24c3f517b2d3c37dbd25bc686ed6dcbcd920148ed593ab6289b6ef1c3128c",
+        "prb/figs/fig_shell.pdf": "e907d7ae94d0bf4834a126dc62fc4d8afa36d787efabbfd6d2e1ef3ac2d1fe51",
+        "prb/generated/tableIV.tex": "31183a5cc53aa841b1ec7e6f3fd8ee4ebd4bfac639ed5bca08dfdb37acf532f7"
+      },
+      "before_sha256": {
+        "figs/data/prb_fig2_shell_points.dat": "6d7c9ed3e4515d7ba8a8fe48494e1e1a7b51713aa0dabf2ebc3085612ed20ea5",
+        "figs/data/prb_fig3_brm_published.dat": "57e7ba3294360bdaaf3bb2656544abd6aca602a416f78719a06c6bea03a79f5d",
+        "figs/data/prb_fig3_lowdensity_points.dat": "cd33f1bed40da93492a1d78fd689a45673e260c223784e2be6dbde0e171eccc2",
+        "figs/data/prb_fig4_map_surface.dat": "662c9a914c2181ccd1516106be66ad53f5c499e03d8ce65aaf3ef032db9fe302",
+        "figs/data/prb_fig5_residuals.dat": "828c94272daa6174834c86cc531bede68216bed1b94a12daf3ef5c1c134cc715",
+        "figs/fig_lowdensity.pdf": "a1c739a636c36128d761182d2ab0634c69eafe89816e37e2c429b33de74efea6",
+        "figs/fig_map.pdf": "4f9f4e3cca8ae137e5bb098231b02d846983981ed6517b3ab9992c266eb1cfce",
+        "figs/fig_residuals.pdf": "983a1410a51ecae8346cb6af001a9bba822071a737476fcbea8d361a97b35349",
+        "figs/fig_shell.pdf": "f38e03c93f6629dbad5104899614635617f630270c646584a4409f9913ab5e43",
+        "prb/figs/fig_lowdensity.pdf": "a1c739a636c36128d761182d2ab0634c69eafe89816e37e2c429b33de74efea6",
+        "prb/figs/fig_map.pdf": "4f9f4e3cca8ae137e5bb098231b02d846983981ed6517b3ab9992c266eb1cfce",
+        "prb/figs/fig_residuals.pdf": "983a1410a51ecae8346cb6af001a9bba822071a737476fcbea8d361a97b35349",
+        "prb/figs/fig_shell.pdf": "f38e03c93f6629dbad5104899614635617f630270c646584a4409f9913ab5e43",
+        "prb/generated/tableIV.tex": "3895be928a290e55c53c3d94dcdbefb7d632f171acc9d837a4e20086e393a07b"
+      },
+      "date": "2026-09-28",
+      "evidence": "audit/notation_revision/product_comparison.json",
+      "products_changed": [
+        "figs/fig_residuals.pdf",
+        "figs/fig_map.pdf",
+        "figs/fig_shell.pdf",
+        "figs/fig_lowdensity.pdf",
+        "prb/figs/fig_residuals.pdf",
+        "prb/figs/fig_map.pdf",
+        "prb/figs/fig_shell.pdf",
+        "prb/figs/fig_lowdensity.pdf",
+        "prb/generated/tableIV.tex",
+        "figs/data/prb_fig5_residuals.dat",
+        "figs/data/prb_fig2_shell_points.dat",
+        "figs/data/prb_fig3_brm_published.dat",
+        "figs/data/prb_fig3_lowdensity_points.dat",
+        "figs/data/prb_fig4_map_surface.dat"
+      ],
+      "reason": "Approved notation migration: e_kite/W labels and data-column descriptions; numerical arrays, raw records, CSV/JSON numerical contents and numerical TeX values unchanged. New rendered labels visually reviewed."
+    },
+    {
+      "date": "2026-09-29",
+      "evidence": "audit/publication_revision_20260929/product_alignment.json",
+      "products_changed": [
+        "figs/data/prb_fig2_inner_profile.dat",
+        "figs/data/prb_fig2_shell_points.dat",
+        "figs/data/prb_fig3_brm_published.dat",
+        "figs/data/prb_fig3_lowdensity_curves.dat",
+        "figs/data/prb_fig3_lowdensity_points.dat",
+        "figs/data/prb_fig4_map_crossing.dat",
+        "figs/data/prb_fig4_map_surface.dat",
+        "figs/data/prb_fig4_polarization_curves.dat",
+        "figs/data/prb_fig4_polarization_points.dat",
+        "figs/data/prb_fig5_residuals.dat",
+        "figs/fig_shell.pdf",
+        "prb/figs/fig_shell.pdf"
+      ],
+      "reason": "Align PRB shell-axis labels with current e(q;r_s) notation and refresh figure numbers in data headers. All numerical data arrays and generated tables/macros are unchanged. Every PRB manuscript PDF/table product matches the current manuscript bytes."
+    }
+  ],
+  "policy": "Generated scientific products; JSON uses canonical serialization.",
+  "sha256": {
+    "data/tables.json": "1b0fda25488ac9f3ce6097ce446b921b9a46100cdf3c9723b115d3d4ac26e90d",
+    "figs/data/map.dat": "90ccf29dfe00d1402b53ed1b8bf470f414db1ee0be467c0c842e6fd70c8a8b7f",
+    "figs/data/spin_fig2_inner_profile.dat": "0ccfd705574702970f021e42b00e55210a2ff082270a974d174b2d283c6cb250",
+    "figs/data/spin_fig2_shell_points.dat": "04fef50e7734560acf60c5bc712f32e9ef757052442ea3d889395a4d367a8670",
+    "figs/data/spin_fig3_brm_published.dat": "c1c415b32294d0a39d47ea3b566995222ab9ccc042eae9e3a921d28ea860a32a",
+    "figs/data/spin_fig3_lowdensity_curves.dat": "23cb82059337c4abf582d085b0c9ab37449bd9ddc05ae888b0e728dd62a740b1",
+    "figs/data/spin_fig3_lowdensity_points.dat": "2a54950dd6e8c21bfb2d59c81e29f82915854f79ae799cf29722938f56d5f5fa",
+    "figs/data/spin_fig4_map_crossing.dat": "80869b20d6a936123358bf1d1547053d720462c60a235caf89ce9801d2f6bc49",
+    "figs/data/spin_fig4_map_surface.dat": "b8edd5389729390cdef13a2aac3f979f0287b915119ded1bdb2e96eb39d3aa0e",
+    "figs/data/spin_fig4_polarization_curves.dat": "9fc79072d89ca10c48ca5d72efae87b51c96790e2d0ce7963c3176370b9f5fa6",
+    "figs/data/spin_fig4_polarization_points.dat": "1d75aec02b659213c34e06bac8a437f15c39796229916df2e542c1f7a03fc618",
+    "figs/data/spin_fig5_residuals.dat": "ab087ba34789e45ed4898c8d2397971e9aa0aa3da1540092a71cda5a7bd311bc",
+    "figs/data/shell.dat": "1a176b4e63ac26576d113ae4eb41059a686939506ae22e496fc6178f8a155702",
+    "figs/fig_lowdensity.pdf": "75941b5d8c203d83cb15089475dfdf8d9d71db921ade9979e9c2280cca17c7ef",
+    "figs/fig_map.pdf": "1a1d206f910f9fecd046e5c6dbed55129ee996fe5e3cb6a1f0dee63862b12e22",
+    "figs/fig_residuals.pdf": "e6f24c3f517b2d3c37dbd25bc686ed6dcbcd920148ed593ab6289b6ef1c3128c",
+    "figs/fig_shell.pdf": "bf004f5822f59bc3adcb8a53c1a85fdd7c9fce040cbe179f9415a11435a4689b",
+    "spin/figs/fig_lowdensity.pdf": "75941b5d8c203d83cb15089475dfdf8d9d71db921ade9979e9c2280cca17c7ef",
+    "spin/figs/fig_map.pdf": "1a1d206f910f9fecd046e5c6dbed55129ee996fe5e3cb6a1f0dee63862b12e22",
+    "spin/figs/fig_residuals.pdf": "e6f24c3f517b2d3c37dbd25bc686ed6dcbcd920148ed593ab6289b6ef1c3128c",
+    "spin/figs/fig_shell.pdf": "bf004f5822f59bc3adcb8a53c1a85fdd7c9fce040cbe179f9415a11435a4689b",
+    "spin/generated/numbers.tex": "7d6df3ada01a5bf5965c75be9281744a5ee4a28e9a902dd6cb513c45410be281",
+    "spin/generated/tableI.tex": "b26f0cbe71787072dadc6323a8074a96fc90b2e92cc7560d6392df6d636a0d99",
+    "spin/generated/tableII.tex": "d80c8938c5729bbcff33bdf514f643964df701f7a0babbc381c0b0c5b46fa852",
+    "spin/generated/tableIII.tex": "c1b0e13cb178f1494f36c924410646cb00e675217bc06d5d78eedce680e2bec5",
+    "spin/generated/tableIV.tex": "31183a5cc53aa841b1ec7e6f3fd8ee4ebd4bfac639ed5bca08dfdb37acf532f7",
+    "production/generated/summary.json": "6a2a3b6bb13d0146261a9765a7b78b0643965dd416a2b6c21c2afde298a5878a",
+    "production/generated/tableI.csv": "cb630dabcd810e58df9fc356bce352cf89a70073694754e39d21ab3fe4bc3121",
+    "production/generated/tableII.csv": "b4532f6d76472a3fdcf63177bf96fe250008434a6ea33a983260c05d06bf1df1",
+    "production/generated/tableIII_direct.csv": "d56d1f9f40adc1df053a528ab9e307912349b1ac4629968671aa73afd2de0ee7",
+    "production/generated/tableIV.csv": "fec03b9b47479271a516fb7f44e9a7fcd0feb5d7723d3a7865abe046ad527d1b"
+  }
+}

@@ -1,0 +1,175 @@
+{
+ "script": "c03_response_3d.py",
+ "title": "first-order exchange polarization in 3D and the Carr--Maradudin coefficient (main Sec. 2.9, SI Sec. S3)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 40.4,
+ "n_checks": 18,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Sec. S3",
+   "what": "quadrature of SI Eq. (S8) equals R^(1)/(4 pi), z=0.1",
+   "computed": "0.2304945176313928379162781",
+   "printed": "0.2304945176313928379162781",
+   "deviation": "2.47e-32",
+   "criterion": "absolute deviation <= 1.0e-22",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "quadrature of SI Eq. (S8) equals R^(1)/(4 pi), z=0.3",
+   "computed": "0.1164517089957400814822877",
+   "printed": "0.1164517089957400814822877",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-22",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "quadrature of SI Eq. (S8) equals R^(1)/(4 pi), z=1",
+   "computed": "0.01161977236758134307553505",
+   "printed": "0.01161977236758134307553505",
+   "deviation": "3.39e-32",
+   "criterion": "absolute deviation <= 1.0e-22",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "quadrature of SI Eq. (S8) equals R^(1)/(4 pi), z=3",
+   "computed": "0.000245154873383365631738438",
+   "printed": "0.000245154873383365631738438",
+   "deviation": "1.24e-31",
+   "criterion": "absolute deviation <= 1.0e-22",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9, SI Sec. S3",
+   "what": "printed quadrature values R_3(z) against R^(1)(z)/(4 pi)",
+   "computed": "2.208e-17",
+   "printed": "within 2.5e-17",
+   "criterion": "deviation found here <= printed bound 2.5e-17",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "azimuthal average of |p - p'|^-2 at fixed mu, mu' equals 1/(2|mu - mu'|)",
+   "computed": "0.625",
+   "printed": "0.625",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "Int h R_3 dz = (pi^2 - 12 log 2)/12",
+   "computed": "0.1293198528641679088189755",
+   "printed": "0.1293198528641679088189755",
+   "deviation": "3.34e-52",
+   "criterion": "absolute deviation <= 1.0e-45",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "Int h^2 g_3 dz = -pi (pi^2 - 6)/288",
+   "computed": "-0.04221083596792034980798769",
+   "printed": "-0.04221083596792034980798769",
+   "deviation": "8.35e-53",
+   "criterion": "absolute deviation <= 1.0e-45",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (37), SI Sec. S19",
+   "what": "residue integral (50-digit quadrature) vs alpha_L (pi^2 - 12 log 2)/(2 pi^3), 40 digits",
+   "computed": "0.01303935283543338186869117",
+   "printed": "0.01303935283543338186869117",
+   "deviation": "4.18e-53",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S19",
+   "what": "residue integral",
+   "computed": "0.01303935283543338",
+   "printed": "0.0130393528",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9",
+   "what": "exchange part of the Carr--Maradudin coefficient",
+   "computed": "0.013039352835",
+   "printed": "0.01304",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9",
+   "what": "ring part alpha_L(pi^2 - 6)/(12 pi^3)",
+   "computed": "0.0054190718253",
+   "printed": "0.00542",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "sum of the two parts (quadrature) vs closed form of C, 60 digits",
+   "computed": "0.0184584246606864425424864",
+   "printed": "0.0184584246606864425424864",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-60",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S3",
+   "what": "sum of the two parts of C",
+   "computed": "0.01845842466068644254249",
+   "printed": "0.0184584246606864",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (1)",
+   "what": "C",
+   "computed": "0.01845842466",
+   "printed": "0.0185",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (30), SI Sec. S19",
+   "what": "(3/pi^3) Int h^2 dz (50-digit quadrature) vs 2(1 - log 2)/pi^2, 40 digits",
+   "computed": "0.06218138173930979006988173",
+   "printed": "0.06218138173930979006988173",
+   "deviation": "8.35e-53",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S19",
+   "what": "(3/pi^3) Int h^2 dz",
+   "computed": "0.06218138173930979",
+   "printed": "0.0621813817",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S19",
+   "what": "Int_0^inf h^2 dz",
+   "computed": "0.32133552109539703598732",
+   "printed": "0.32133552109539704",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  }
+ ]
+}

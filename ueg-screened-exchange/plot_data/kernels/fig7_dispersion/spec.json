@@ -1,0 +1,372 @@
+{
+ "figure": "fig_dispersion",
+ "size_inches": [
+  6.6,
+  2.5
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.125,
+    0.10999999999999999,
+    0.32563025210084034,
+    0.77
+   ],
+   "title": "(a) Approximate screening pole",
+   "xlabel": "$q/q_*$",
+   "ylabel": "approximate pole $\\omega_\\lambda/q_*^{2}$",
+   "xscale": "log",
+   "yscale": "log",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.0767361489361819,
+    26.001595631652723
+   ],
+   "ylim": [
+    0.1,
+    40.0
+   ],
+   "xticks": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+   ],
+   "yticks": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$\\lambda=1$",
+     "file": "ax0_00_line_lambda_1.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$\\lambda=0.5$",
+     "file": "ax0_01_line_lambda_0_5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "--",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$\\lambda=0.25$",
+     "file": "ax0_02_line_lambda_0_25.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": ":",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "file": "ax0_03_line_child3.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#595959ff",
+     "linestyle": "-",
+     "linewidth": 0.9,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#595959ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "file": "ax0_04_line_child5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#d62728ff",
+     "linestyle": "-.",
+     "linewidth": 0.8,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d62728ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0
+   },
+   "legend": {
+    "texts": [
+     "$\\lambda=1$",
+     "$\\lambda=0.5$",
+     "$\\lambda=0.25$"
+    ],
+    "loc": 2
+   },
+   "texts": [
+    {
+     "text": "free-electron limit\n$\\omega=q^{2}/2$",
+     "x": 0.98,
+     "y": 0.4,
+     "coordinates": "axes fraction",
+     "fontsize": 7.5,
+     "ha": "right",
+     "va": "baseline",
+     "color": "#404040ff",
+     "rotation": 0.0
+    },
+    {
+     "text": "plasma limit ($\\lambda=1$): $\\omega/q_*^2=1/2$",
+     "x": 0.105,
+     "y": 0.135,
+     "coordinates": "data",
+     "fontsize": 7.5,
+     "ha": "left",
+     "va": "baseline",
+     "color": "#d62728ff",
+     "rotation": 0.0
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "position": [
+    0.5743697478991596,
+    0.10999999999999999,
+    0.3256302521008404,
+    0.77
+   ],
+   "title": "(b) Local frequency kernel",
+   "xlabel": "$s_\\Lambda=\\Lambda/q$",
+   "ylabel": "$p_{\\rm loc}(s_\\Lambda)=2\\pi s_\\Lambda/(1+2s_\\Lambda)^{2}$",
+   "xscale": "log",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.03589219346450052,
+    55.59042572704037
+   ],
+   "ylim": [
+    0.0,
+    0.95
+   ],
+   "xticks": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+   ],
+   "yticks": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "file": "ax1_00_line_child0.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "file": "ax1_01_line_child1.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x data, y axes fraction",
+     "color": "#595959ff",
+     "linestyle": "-",
+     "linewidth": 0.8,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#595959ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "file": "ax1_02_line_child2.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d62728ff",
+     "linestyle": "None",
+     "linewidth": 1.2,
+     "marker": "o",
+     "markersize": 3.5,
+     "markerfacecolor": "#d62728ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {},
+   "texts": [
+    {
+     "text": "$s_\\Lambda=\\frac{1}{2}$",
+     "x": 0.55,
+     "y": 0.730420291959627,
+     "coordinates": "data",
+     "fontsize": 7.5,
+     "ha": "left",
+     "va": "baseline",
+     "color": "#404040ff",
+     "rotation": 0.0
+    }
+   ]
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "sans-serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 9.0,
+  "axes.labelsize": 9.0,
+  "xtick.labelsize": 8.0,
+  "ytick.labelsize": 8.0,
+  "legend.fontsize": 8.0,
+  "lines.linewidth": 1.2,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavusans",
+  "savefig.bbox": "tight",
+  "savefig.pad_inches": 0.02
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "KERNELS",
+ "figure_number": 7,
+ "latex_label": "app-fig:dispersion",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_dispersion.pdf",
+ "produced_by": "figs/make_lorentzian_figs.py"
+}

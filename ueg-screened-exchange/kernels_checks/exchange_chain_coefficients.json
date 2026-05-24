@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "convention": "unsigned connected-vacuum symmetry coefficients",
+  "orders": [
+    {
+      "interaction_order": 2,
+      "generated_cycle_permutations": 6,
+      "topologies": [
+        {
+          "core_pattern": "adjacent",
+          "bubble_chain_lengths": [
+            0,
+            0
+          ],
+          "wick_contractions": 4,
+          "expansion_denominator": 8,
+          "symmetry_coefficient": "1/2",
+          "automorphism_prediction": "1/2"
+        },
+        {
+          "core_pattern": "exchange",
+          "bubble_chain_lengths": [
+            0,
+            0
+          ],
+          "wick_contractions": 2,
+          "expansion_denominator": 8,
+          "symmetry_coefficient": "1/4",
+          "automorphism_prediction": "1/4"
+        }
+      ]
+    },
+    {
+      "interaction_order": 3,
+      "generated_cycle_permutations": 90,
+      "topologies": [
+        {
+          "core_pattern": "adjacent",
+          "bubble_chain_lengths": [
+            0,
+            1
+          ],
+          "wick_contractions": 48,
+          "expansion_denominator": 48,
+          "symmetry_coefficient": "1",
+          "automorphism_prediction": "1"
+        },
+        {
+          "core_pattern": "exchange",
+          "bubble_chain_lengths": [
+            0,
+            1
+          ],
+          "wick_contractions": 24,
+          "expansion_denominator": 48,
+          "symmetry_coefficient": "1/2",
+          "automorphism_prediction": "1/2"
+        }
+      ]
+    },
+    {
+      "interaction_order": 4,
+      "generated_cycle_permutations": 1260,
+      "topologies": [
+        {
+          "core_pattern": "adjacent",
+          "bubble_chain_lengths": [
+            0,
+            2
+          ],
+          "wick_contractions": 384,
+          "expansion_denominator": 384,
+          "symmetry_coefficient": "1",
+          "automorphism_prediction": "1"
+        },
+        {
+          "core_pattern": "adjacent",
+          "bubble_chain_lengths": [
+            1,
+            1
+          ],
+          "wick_contractions": 192,
+          "expansion_denominator": 384,
+          "symmetry_coefficient": "1/2",
+          "automorphism_prediction": "1/2"
+        },
+        {
+          "core_pattern": "exchange",
+          "bubble_chain_lengths": [
+            0,
+            2
+          ],
+          "wick_contractions": 192,
+          "expansion_denominator": 384,
+          "symmetry_coefficient": "1/2",
+          "automorphism_prediction": "1/2"
+        },
+        {
+          "core_pattern": "exchange",
+          "bubble_chain_lengths": [
+            1,
+            1
+          ],
+          "wick_contractions": 96,
+          "expansion_denominator": 384,
+          "symmetry_coefficient": "1/4",
+          "automorphism_prediction": "1/4"
+        }
+      ]
+    }
+  ]
+}

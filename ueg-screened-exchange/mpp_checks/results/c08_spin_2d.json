@@ -1,0 +1,194 @@
+{
+ "script": "c08_spin_2d.py",
+ "title": "spin dependence in two dimensions (SI Sec. S8, Table S4)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 2.2,
+ "n_checks": 20,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Table S4",
+   "what": "zeta = 0: both ratios equal 1",
+   "computed": "2.0",
+   "printed": "2.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_l(zeta)/a_l(0) at zeta=0.2",
+   "computed": "0.98825579405",
+   "printed": "0.98826",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_2l(zeta)/a_2l(0) at zeta=0.2",
+   "computed": "0.99854906638",
+   "printed": "0.99855",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_l(zeta)/a_l(0) at zeta=0.4",
+   "computed": "0.95076145393",
+   "printed": "0.95076",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_2l(zeta)/a_2l(0) at zeta=0.4",
+   "computed": "0.99376951676",
+   "printed": "0.99377",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_l(zeta)/a_l(0) at zeta=0.6",
+   "computed": "0.87865205007",
+   "printed": "0.87865",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_2l(zeta)/a_2l(0) at zeta=0.6",
+   "computed": "0.98390949258",
+   "printed": "0.98391",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_l(zeta)/a_l(0) at zeta=0.8",
+   "computed": "0.74375000059",
+   "printed": "0.74375",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_2l(zeta)/a_2l(0) at zeta=0.8",
+   "computed": "0.96281134816",
+   "printed": "0.96281",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_l(zeta)/a_l(0) at zeta=0.9",
+   "computed": "0.61946477313",
+   "printed": "0.61946",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S4",
+   "what": "a_2l(zeta)/a_2l(0) at zeta=0.9",
+   "computed": "0.93978885798",
+   "printed": "0.93979",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "zeta = 1: a_l ratio = 1/(4 sqrt 2)",
+   "computed": "0.1767766952966368811002111",
+   "printed": "0.1767766952966368811002111",
+   "deviation": "2.47e-32",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "zeta = 1: a_2l ratio = 1/8",
+   "computed": "0.125",
+   "printed": "0.125",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "small-zeta coefficient of a_l(zeta)/a_l(0)",
+   "computed": "-0.289326651",
+   "printed": "-0.289",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "small-zeta coefficient of a_2l(zeta)/a_2l(0)",
+   "computed": "-0.03547981649",
+   "printed": "-0.0355",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "limit zeta -> 1 of a_2l(zeta)/a_2l(0)",
+   "computed": "0.81648786418",
+   "printed": "0.81649",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "a_2l ratio at 1 - zeta = 1e-2",
+   "computed": "0.87372885091",
+   "printed": "0.87373",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "a_2l ratio at 1 - zeta = 1e-4",
+   "computed": "0.82391680668",
+   "printed": "0.82392",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "a_2l ratio at 1 - zeta = 1e-6",
+   "computed": "0.8172652637",
+   "printed": "0.81727",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S8",
+   "what": "a_2l ratio at 1 - zeta = 1e-8",
+   "computed": "0.81656612833",
+   "printed": "0.81657",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  }
+ ]
+}

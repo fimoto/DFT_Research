@@ -1,0 +1,156 @@
+{
+ "script": "c11_lowdensity_kite.py",
+ "title": "low-density kite (main Sec. 3.3, Table 3)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 4.9,
+ "n_checks": 16,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "main Eq. (53)",
+   "what": "A_1 from the (lambda, x) double integral equals the gamma-function formula",
+   "computed": "-0.2146937609890976532651319",
+   "printed": "-0.2146937609890976532651319",
+   "deviation": "2.47e-32",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S91)",
+   "what": "-(12/(7 sqrt2 pi^2)) B(1/2, 5/4) equals the gamma-function formula",
+   "computed": "-0.2146937609890976532651319",
+   "printed": "-0.2146937609890976532651319",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-28",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (53)",
+   "what": "A_1",
+   "computed": "-0.2146937609890977",
+   "printed": "-0.2146937609",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "q_*^-1 r_s^(1/4) = [3 pi/(16 alpha_L)]^(1/4)",
+   "computed": "1.031134897861",
+   "printed": "1.0311348",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  },
+  {
+   "where": "main Table 3",
+   "what": "e_kite: A_1/q_* coefficient of r_s^-1/4",
+   "computed": "-0.2213782293087863",
+   "printed": "-0.2213782293",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 3",
+   "what": "F: (7/8) A_1/q_* coefficient",
+   "computed": "-0.193705950645188",
+   "printed": "-0.1937059506",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S12",
+   "what": "Mellin multiplier 2/(p+2) at p = -1/4 is 8/7",
+   "computed": "1.142857142857142857142857",
+   "printed": "1.142857142857142857142857",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-28",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "A_1/q_* at r_s = 1e8, in mRy",
+   "computed": "-2.21378229",
+   "printed": "-2.214",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "q_* at r_s = 2e5 (units of k_F)",
+   "computed": "20.5089",
+   "printed": "20",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "q_* at r_s = 1e6 (units of k_F)",
+   "computed": "30.6679",
+   "printed": "31",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "direct value at r_s = 1e+08 (mRy), production/raw/tableI/rs_1e+08_z_0.json",
+   "computed": "-2.2182684",
+   "printed": "-2.22",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "its standard error at r_s = 1e+08",
+   "computed": "0.2149108",
+   "printed": "0.21",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "direct value at r_s = 200000 (mRy), production/raw/tableI/rs_200000_z_0.json",
+   "computed": "-9.1324496",
+   "printed": "-9.13",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "direct value at r_s = 1e+06 (mRy), production/raw/tableI/rs_1e+06_z_0.json",
+   "computed": "-6.3476605",
+   "printed": "-6.35",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "BRM Monte Carlo values at r_s = 2e5 and 1e6 quoted in the text (mRy)",
+   "computed": "(-7.13, -3.89)",
+   "printed": "(-7.13, -3.89)",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "BRM value at r_s = 0.1 quoted in the text, 43.53(18) mRy",
+   "computed": "(43.53, 0.18)",
+   "printed": "(43.53, 0.18)",
+   "criterion": "exact equality",
+   "pass": true
+  }
+ ]
+}

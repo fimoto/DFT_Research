@@ -1,0 +1,164 @@
+{
+ "script": "c06_finiteq_2d.py",
+ "title": "finite-q first-order exchange polarization in 2D (SI Sec. S6, Table S3)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 198.7,
+ "n_checks": 16,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=0.3, q=0.08 (in units of 1e-4)",
+   "computed": "-1.218642707",
+   "printed": "-1.2186",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=0.3, q=0.08",
+   "computed": "1.57e-14",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=0.3, q=0.04 (in units of 1e-5)",
+   "computed": "-3.362581138",
+   "printed": "-3.3626",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=0.3, q=0.04",
+   "computed": "1.83e-15",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=0.3, q=0.02 (in units of 1e-6)",
+   "computed": "-9.199001979",
+   "printed": "-9.1990",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=0.3, q=0.02",
+   "computed": "6.64e-14",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=1, q=0.08 (in units of 1e-6)",
+   "computed": "-5.175862315",
+   "printed": "-5.1759",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=1, q=0.08",
+   "computed": "4.64e-15",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=1, q=0.04 (in units of 1e-6)",
+   "computed": "0.9887702007",
+   "printed": "0.9888",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=1, q=0.04",
+   "computed": "9.19e-15",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3",
+   "what": "R(q,z) - R_2(z) at z=1, q=0.02 (in units of 1e-6)",
+   "computed": "0.8175700286",
+   "printed": "0.8176",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "change between node sets at z=1, q=0.02",
+   "computed": "1.72e-14",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "z = 0.3: ratio of successive differences when q is halved, q = 0.08/0.04 ('about 3.6')",
+   "computed": "3.62412877760294493967308",
+   "printed": "3.600000000000000088817842",
+   "deviation": "0.0241",
+   "criterion": "absolute deviation <= 0.1",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "z = 0.3: ratio, q = 0.04/0.02 ('about 3.6')",
+   "computed": "3.655376034738508916888122",
+   "printed": "3.600000000000000088817842",
+   "deviation": "0.0554",
+   "criterion": "absolute deviation <= 0.1",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "z = 1: the differences are below 1e-5 in magnitude and change sign",
+   "computed": "(np.True_, np.True_)",
+   "printed": "(True, True)",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "static comparison with Das Sarma (z = 0)",
+   "computed": "not reproduced by this script (see docstring)",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  }
+ ],
+ "node_sets": {
+  "coarse": [
+   96,
+   48,
+   1024,
+   256
+  ],
+  "fine": [
+   144,
+   72,
+   1536,
+   384
+  ]
+ }
+}

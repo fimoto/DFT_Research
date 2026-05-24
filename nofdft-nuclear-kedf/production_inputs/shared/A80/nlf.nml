@@ -1,0 +1,15 @@
+! Exact production input: shared/A80, stage 3/3 (NLF evaluation)
+! Use an isolated case directory; ks.x always reads input_ks_nlf.dat.
+! Requires: ite_density.dat and kernel.dat. Writes: nlf.dat.
+! Source paths and constants: production_inputs/cases.tsv
+&input
+ run_ks=.false., run_nlf=.true., run_derivative=.false., run_teacher=.false.,
+ run_deriv_check=.false., run_ite=.false., run_minimize=.false., run_diagscf=.false.,
+ nlf_use_ks_density=.false., density_scale=1.0d0, external_density_file='ite_density.dat',
+ A=80, npart_q=40, kernel_mode='dd', kf_const=0.80d0,
+ extra_kernel_file='', extra_g_file='kernel.dat', c_corr_shift=-2.004040d0, s2_grad_in=0.0d0,
+ qmax=60.0d0, nq=6000, nmu=48, nr_tab=4001,
+ dd_xqmax_in=80.0d0, dd_ny_base_in=8001, dd_kf_scale_in=1.0d0,
+ kernel_lambda=1.0d0, use_semilocal=.false.,
+ nlf_file='nlf.dat'
+/

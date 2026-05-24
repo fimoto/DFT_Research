@@ -1,0 +1,10 @@
+# Density-dependent-kernel NL-OFDFT derivative summary
+N_species                 7.999999999999999E+00
+T_vW_species_MeV          5.895776678509937E+01
+T_KEDFnl_species_MeV       1.299046706761619E+02
+E_grad_species_MeV         0.000000000000000E+00
+T_SL_fit_species_MeV       0.000000000000000E+00
+E_SkP_total_MeV           -3.769440798524345E+02
+E_total_NeqZ_MeV          -1.171347385001106E+02
+mu_est_MeV               -1.059345626009222E+01
+residual_phi_L2           6.213853718014675E-02

@@ -1,0 +1,60 @@
+{
+  "free_bubble_checks": [
+    {
+      "q": 0.7,
+      "nu": 0.4,
+      "Pi0_from_loop": -0.27453808889239684,
+      "Pi0_expected": -0.2745380888923969,
+      "relative_error": 2.0219835963458975e-16,
+      "dielectric_product_error": 1.1102230246251565e-16
+    },
+    {
+      "q": 3.0,
+      "nu": 2.0,
+      "Pi0_from_loop": -0.09173078758012419,
+      "Pi0_expected": -0.09173078758012419,
+      "relative_error": 0.0,
+      "dielectric_product_error": 0.0
+    }
+  ],
+  "K_Pi_vtx_minus_A0": "0",
+  "marking_checks": [
+    {
+      "m": 1,
+      "e_closed_coefficient": 2,
+      "full_derivative_coefficient": 6,
+      "core_only_derivative_coefficient": 4,
+      "BRM_integrand_coefficient": 2,
+      "e_kite_coefficient": 0.6666666666666666,
+      "e_kite_over_e_closed": 0.3333333333333333
+    },
+    {
+      "m": 2,
+      "e_closed_coefficient": 2,
+      "full_derivative_coefficient": 8,
+      "core_only_derivative_coefficient": 4,
+      "BRM_integrand_coefficient": 2,
+      "e_kite_coefficient": 0.5,
+      "e_kite_over_e_closed": 0.25
+    },
+    {
+      "m": 3,
+      "e_closed_coefficient": 2,
+      "full_derivative_coefficient": 10,
+      "core_only_derivative_coefficient": 4,
+      "BRM_integrand_coefficient": 2,
+      "e_kite_coefficient": 0.4,
+      "e_kite_over_e_closed": 0.2
+    },
+    {
+      "m": 4,
+      "e_closed_coefficient": 2,
+      "full_derivative_coefficient": 12,
+      "core_only_derivative_coefficient": 4,
+      "BRM_integrand_coefficient": 2,
+      "e_kite_coefficient": 0.3333333333333333,
+      "e_kite_over_e_closed": 0.16666666666666666
+    }
+  ],
+  "status": "PASS"
+}

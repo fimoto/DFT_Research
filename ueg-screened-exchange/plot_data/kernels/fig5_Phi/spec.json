@@ -1,0 +1,275 @@
+{
+ "figure": "fig_Phi",
+ "size_inches": [
+  6.6,
+  2.9
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.12239057239057241,
+    0.1944061302681992,
+    0.369085668262745,
+    0.5835632183908048
+   ],
+   "title": "(a) Small-$y$ expansion",
+   "xlabel": "$y$",
+   "ylabel": "$\\Phi(y)$",
+   "xscale": "log",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.0022485439627741056,
+    1.999293935235839
+   ],
+   "ylim": [
+    -0.23731848162801172,
+    0.17386740681050025
+   ],
+   "xticks": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+   ],
+   "yticks": [
+    -0.30000000000000004,
+    -0.20000000000000004,
+    -0.10000000000000003,
+    0.0,
+    0.09999999999999998,
+    0.19999999999999996
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$\\Phi(y)$",
+     "file": "ax0_00_line_Phi_y.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.2,
+     "marker": "o",
+     "markersize": 2.2,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "6",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$a_0\\,y\\log y+b_0\\,y$",
+     "file": "ax0_01_line_a_0_y_log_y_b_0_y.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d62728ff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d62728ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {},
+   "legend": {
+    "texts": [
+     "$\\Phi(y)$",
+     "$a_0\\,y\\log y+b_0\\,y$"
+    ],
+    "loc": 2
+   },
+   "texts": []
+  },
+  {
+   "index": 1,
+   "position": [
+    0.5978940976082838,
+    0.1944061302681992,
+    0.3690856682627449,
+    0.5835632183908048
+   ],
+   "title": "(b) Oscillatory large-$y$ tail",
+   "xlabel": "$y$",
+   "ylabel": "$y^{2}\\Phi(y)$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    1.2628522637690276,
+    61.48010246085042
+   ],
+   "ylim": [
+    -14.0,
+    22.0
+   ],
+   "xticks": [
+    0.0,
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0
+   ],
+   "yticks": [
+    -20.0,
+    -10.0,
+    0.0,
+    10.0,
+    20.0,
+    30.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$y^{2}\\Phi(y)$",
+     "file": "ax1_00_line_y_2_Phi_y.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#bfbfbfff",
+     "linestyle": "-",
+     "linewidth": 0.7,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#bfbfbfff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "twice-averaged",
+     "file": "ax1_01_line_twice_averaged.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$2\\pi\\log 2$",
+     "file": "ax1_02_line_2_pi_log_2.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#d62728ff",
+     "linestyle": "--",
+     "linewidth": 1.0,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d62728ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {},
+   "yscale_kwargs": {},
+   "legend": {
+    "texts": [
+     "$y^{2}\\Phi(y)$",
+     "twice-averaged",
+     "$2\\pi\\log 2$"
+    ],
+    "loc": 9
+   },
+   "texts": []
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 9.0,
+  "axes.labelsize": 9.0,
+  "xtick.labelsize": 8.0,
+  "ytick.labelsize": 8.0,
+  "legend.fontsize": 8.0,
+  "lines.linewidth": 1.2,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "cm",
+  "savefig.bbox": null,
+  "savefig.pad_inches": 0.1
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "KERNELS",
+ "figure_number": 5,
+ "latex_label": "app-fig:Phi",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_Phi.pdf",
+ "produced_by": "figs/make_phi_fig.py"
+}

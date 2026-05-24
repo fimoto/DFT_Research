@@ -1,0 +1,310 @@
+{
+ "script": "c10_hd_fit.py",
+ "title": "fits of the direct high-density kite energies (main Sec. 3.3, SI Sec. S19, Table S5)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 0.0,
+ "n_checks": 33,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Sec. S19, Table S5",
+   "what": "e_2x in mRy",
+   "computed": "48.358317836",
+   "printed": "48.35832",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "64 replicates per density",
+   "computed": "[64, 64, 64, 64, 64]",
+   "printed": "[64, 64, 64, 64, 64]",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite at r_s=0.001 (mRy)",
+   "computed": "48.220307721",
+   "printed": "48.22031",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite - e_2x at r_s=0.001 (mRy), from the unrounded values",
+   "computed": "-0.13801011514",
+   "printed": "-0.13801",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "standard error at r_s=0.001 (mRy)",
+   "computed": "0.00073430909099",
+   "printed": "0.00073",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite at r_s=0.003 (mRy)",
+   "computed": "48.018551913",
+   "printed": "48.01855",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite - e_2x at r_s=0.003 (mRy), from the unrounded values",
+   "computed": "-0.33976592343",
+   "printed": "-0.33977",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "standard error at r_s=0.003 (mRy)",
+   "computed": "0.0010044639283",
+   "printed": "0.00100",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite at r_s=0.01 (mRy)",
+   "computed": "47.470457191",
+   "printed": "47.47046",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite - e_2x at r_s=0.01 (mRy), from the unrounded values",
+   "computed": "-0.88786064547",
+   "printed": "-0.88786",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "standard error at r_s=0.01 (mRy)",
+   "computed": "0.0019636850582",
+   "printed": "0.00196",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite at r_s=0.03 (mRy)",
+   "computed": "46.296315984",
+   "printed": "46.29632",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite - e_2x at r_s=0.03 (mRy), from the unrounded values",
+   "computed": "-2.0620018526",
+   "printed": "-2.06200",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "standard error at r_s=0.03 (mRy)",
+   "computed": "0.0032576883577",
+   "printed": "0.00326",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite at r_s=0.1 (mRy)",
+   "computed": "43.433113686",
+   "printed": "43.43311",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "e_kite - e_2x at r_s=0.1 (mRy), from the unrounded values",
+   "computed": "-4.9252041499",
+   "printed": "-4.92520",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S5",
+   "what": "standard error at r_s=0.1 (mRy)",
+   "computed": "0.0061439376865",
+   "printed": "0.00614",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "direct value at r_s = 0.1 (mRy, 43.433(6))",
+   "computed": "43.4331137",
+   "printed": "43.433",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "c_fit, all five values (Ry)",
+   "computed": "-0.00090519526987",
+   "printed": "-0.00091",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "its standard error (Ry)",
+   "computed": "4.6437230814e-5",
+   "printed": "0.00005",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "weighted sum of squared residuals, two degrees of freedom",
+   "computed": "0.023373416",
+   "printed": "0.02",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "c_fit, four values with r_s <= 0.03 (Ry)",
+   "computed": "-0.00091683892355",
+   "printed": "-0.00092",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "its standard error (Ry)",
+   "computed": "0.00012397507027",
+   "printed": "0.00012",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "weighted sum of squared residuals without the r_s log^2 r_s term, three degrees of freedom",
+   "computed": "379.996",
+   "printed": "380",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (52)",
+   "what": "c_hd (Ry)",
+   "computed": "-0.0008594457189778661",
+   "printed": "-0.0008594457",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3",
+   "what": "c_1 (Ry), companion paper",
+   "computed": "0.011499642149",
+   "printed": "0.01150",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "c_1,fit with c_fit = c_hd, r_s <= 0.1 (Ry)",
+   "computed": "0.011251594038",
+   "printed": "0.01125",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "its standard error, r_s <= 0.1 (Ry)",
+   "computed": "5.733273087e-5",
+   "printed": "0.00006",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "c_1,fit with c_fit = c_hd, r_s <= 0.03 (Ry)",
+   "computed": "0.011339468281",
+   "printed": "0.01134",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "its standard error, r_s <= 0.03 (Ry)",
+   "computed": "0.00011558819881",
+   "printed": "0.00012",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "distance of the r_s <= 0.03 value from c_1, in standard errors ('within 1.4 sigma')",
+   "computed": "1.385729",
+   "printed": "1.4",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "c_1,fit with c_fit = c_hd, r_s <= 0.01 (Ry)",
+   "computed": "0.011426613433",
+   "printed": "0.01143",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.3, SI Sec. S19",
+   "what": "its standard error, r_s <= 0.01 (Ry)",
+   "computed": "0.00024525295489",
+   "printed": "0.00025",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  }
+ ]
+}

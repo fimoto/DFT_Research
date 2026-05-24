@@ -1,0 +1,158 @@
+{
+ "common_cutoff_kF": 11.70254897840243,
+ "chi2_all": 39.19547693701353,
+ "n_all": 15,
+ "chi2_rs_ge_1e3": 2.7685058710039336,
+ "n_rs_ge_1e3": 5,
+ "chi2_rs_ge_5e3": 2.239596056797385,
+ "n_rs_ge_5e3": 4,
+ "chi2_rs_le_50": 36.42697106600959,
+ "n_rs_le_50": 10,
+ "weighted_mean_rs_le_50": 0.5261927914319803,
+ "weighted_mean_err_independent": 0.1127782101411362,
+ "weighted_mean_err_with_direct_covariance": 0.11866635961921727,
+ "n_positive_rs_le_50": 9,
+ "joint_fit": {
+  "qc_kF": 12.471490704255336,
+  "qmin_kF": 0.1276616949057408,
+  "chi2": 25.432429390652413
+ },
+ "rows": [
+  {
+   "rs": 0.1,
+   "published_minus_direct_mry": 0.10591175888750115,
+   "err_mry": 0.18051281631810437,
+   "implied_qc_kF": 1.7613416791309129,
+   "implied_qc_over_qstar": 3.2296770503099386,
+   "predicted_mry": 4.1483748641074625e-06,
+   "pull": 0.5867041059622266
+  },
+  {
+   "rs": 1.0,
+   "published_minus_direct_mry": -0.24017871726055162,
+   "err_mry": 0.8405587915061493,
+   "implied_qc_kF": null,
+   "implied_qc_over_qstar": null,
+   "predicted_mry": 4.148299733927607e-05,
+   "pull": -0.285786315823851
+  },
+  {
+   "rs": 2.0,
+   "published_minus_direct_mry": 0.7614520108532261,
+   "err_mry": 0.3323370129273206,
+   "implied_qc_kF": 2.0492766501569983,
+   "implied_qc_over_qstar": 1.7768819599963213,
+   "predicted_mry": 8.296432519455665e-05,
+   "pull": 2.2909547143776514
+  },
+  {
+   "rs": 3.0,
+   "published_minus_direct_mry": 0.80735854217275,
+   "err_mry": 0.6815062040893894,
+   "implied_qc_kF": 2.161877800425609,
+   "implied_qc_over_qstar": 1.6938163226305396,
+   "predicted_mry": 0.0001244439836803335,
+   "pull": 1.1844853258051768
+  },
+  {
+   "rs": 5.0,
+   "published_minus_direct_mry": 1.2972840742130352,
+   "err_mry": 0.34417468059764,
+   "implied_qc_kF": 2.1615235907519623,
+   "implied_qc_over_qstar": 1.490503376177508,
+   "predicted_mry": 0.0002073982931088958,
+   "pull": 3.76865803628444
+  },
+  {
+   "rs": 7.0,
+   "published_minus_direct_mry": 0.31655448140606857,
+   "err_mry": 0.4142315584788629,
+   "implied_qc_kF": 2.9672354013547926,
+   "implied_qc_over_qstar": 1.881018111628608,
+   "predicted_mry": 0.00029034592662069425,
+   "pull": 0.763495993981796
+  },
+  {
+   "rs": 10.0,
+   "published_minus_direct_mry": 0.9319156868110379,
+   "err_mry": 0.41513798134412927,
+   "implied_qc_kF": 2.5811206156966158,
+   "implied_qc_over_qstar": 1.496662182223537,
+   "predicted_mry": 0.00041475486178138565,
+   "pull": 2.2438345172206424
+  },
+  {
+   "rs": 20.0,
+   "published_minus_direct_mry": 0.4935913200309887,
+   "err_mry": 0.9033007878834128,
+   "implied_qc_kF": 3.306917043458164,
+   "implied_qc_over_qstar": 1.6124315487561727,
+   "predicted_mry": 0.0008293428894537436,
+   "pull": 0.5455126174484581
+  },
+  {
+   "rs": 30.0,
+   "published_minus_direct_mry": 0.8781299386846797,
+   "err_mry": 0.2924248106483746,
+   "implied_qc_kF": 3.17264139259643,
+   "implied_qc_over_qstar": 1.3978357961212944,
+   "predicted_mry": 0.0012437642100543433,
+   "pull": 2.9986722827326533
+  },
+  {
+   "rs": 50.0,
+   "published_minus_direct_mry": 0.3234022908296481,
+   "err_mry": 0.6566321620770574,
+   "implied_qc_kF": 4.277926214101293,
+   "implied_qc_over_qstar": 1.658846779234724,
+   "predicted_mry": 0.002072107237710563,
+   "pull": 0.48936101846657437
+  },
+  {
+   "rs": 1000.0,
+   "published_minus_direct_mry": -0.23419124727655571,
+   "err_mry": 0.3779393655178707,
+   "implied_qc_kF": null,
+   "implied_qc_over_qstar": null,
+   "predicted_mry": 0.0406696389679273,
+   "pull": -0.7272618608221861
+  },
+  {
+   "rs": 5000.0,
+   "published_minus_direct_mry": 0.45249031892592484,
+   "err_mry": 0.2152635935908255,
+   "implied_qc_kF": 9.6578290983459,
+   "implied_qc_over_qstar": 1.1842748334077127,
+   "predicted_mry": 0.1888644987796395,
+   "pull": 1.2246651454095256
+  },
+  {
+   "rs": 20000.0,
+   "published_minus_direct_mry": 0.4664734564319595,
+   "err_mry": 0.2530401310754913,
+   "implied_qc_kF": 12.464454443177912,
+   "implied_qc_over_qstar": 1.08076497331788,
+   "predicted_mry": 0.6041535784217927,
+   "pull": -0.5441038992694727
+  },
+  {
+   "rs": 200000.0,
+   "published_minus_direct_mry": 2.080733541485592,
+   "err_mry": 0.19814242300412643,
+   "implied_qc_kF": 11.485283697768956,
+   "implied_qc_over_qstar": 0.5600150695443931,
+   "predicted_mry": 1.996953323563179,
+   "pull": 0.4228282699493798
+  },
+  {
+   "rs": 1000000.0,
+   "published_minus_direct_mry": 2.5176921692605982,
+   "err_mry": 0.20401896042226797,
+   "implied_qc_kF": 12.075486053929074,
+   "implied_qc_over_qstar": 0.3937495823238817,
+   "predicted_mry": 2.6227091409788543,
+   "pull": -0.5147412353288016
+  }
+ ],
+ "note": "The published errors are treated as independent and the standardized residual sums are conditional diagnostics, not exact chi-square tests."
+}

@@ -1,0 +1,367 @@
+{
+ "script": "c01_lindhard_d.py",
+ "title": "d-dimensional constants and the Lindhard shape h_d (SI Sec. S1, Table S2)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 2.5,
+ "n_checks": 41,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Table S2",
+   "what": "A_2",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "C_2",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "alpha_2",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "B_2",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "(d/8pi) E_0 q_TF^(d+1) for d=2",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "q_TF = sqrt(2) r_s, E_0 = 4/r_s^2 (d=2)",
+   "computed": "(True, True)",
+   "printed": "(True, True)",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "A_3",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "C_3",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "alpha_3",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "B_3",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "(d/8pi) E_0 q_TF^(d+1) for d=3",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Table S2",
+   "what": "E_0 = 32/(pi^2 q_TF^4) (d=3)",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "hypergeometric h_d vs direct angular average, d = 2, 3, 3.5, 4, 5 (25 points)",
+   "computed": "6.137e-23",
+   "printed": "agree to 18 digits",
+   "criterion": "deviation found here <= printed bound 1.0e-18",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (10)",
+   "what": "h_2, h_3, h_4 closed forms equal the hypergeometric form",
+   "computed": "2.296e-41",
+   "printed": "identity",
+   "criterion": "deviation found here <= printed bound 1.0e-35",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.2",
+   "what": "h_d(z) ~ 1/(d z^2) at large z, d=2 (z = 1e4, relative)",
+   "computed": "0.9999999925000000624999995",
+   "printed": "1.0",
+   "deviation": "7.5e-9",
+   "criterion": "absolute deviation <= 1.0e-7",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.2",
+   "what": "h_d(z) ~ 1/(d z^2) at large z, d=3 (z = 1e4, relative)",
+   "computed": "0.9999999940000000428571425",
+   "printed": "1.0",
+   "deviation": "6.0e-9",
+   "criterion": "absolute deviation <= 1.0e-7",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.2",
+   "what": "h_d(z) ~ 1/(d z^2) at large z, d=4 (z = 1e4, relative)",
+   "computed": "0.9999999950000000312499998",
+   "printed": "1.0",
+   "deviation": "5.0e-9",
+   "criterion": "absolute deviation <= 1.0e-7",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.2",
+   "what": "h_d(z) ~ 1/(d z^2) at large z, d=5 (z = 1e4, relative)",
+   "computed": "0.9999999957142857380952379",
+   "printed": "1.0",
+   "deviation": "4.29e-9",
+   "criterion": "absolute deviation <= 1.0e-7",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S3)",
+   "what": "Int h_2^3 dz = 8 Int_0^1 r^4/(1+r^2)^2 dr = 10 - 3 pi",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S3)",
+   "what": "Int h_4^(5/3) dz = 60/91",
+   "computed": "60/91",
+   "printed": "60/91",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S3)",
+   "what": "quadrature of Int h_2^3 dz over the real line",
+   "computed": "0.5752220392306202846120699",
+   "printed": "0.5752220392306202846120699",
+   "deviation": "4.59e-41",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S3)",
+   "what": "quadrature of Int h_4^(5/3) dz",
+   "computed": "0.6593406593406593406593407",
+   "printed": "0.6593406593406593406593407",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "Int h^2 dz over the real line = (2 pi/3)(1 - log 2)",
+   "computed": "0.6426710421907940719746363",
+   "printed": "0.6426710421907940719746363",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^0 of L(q,qz) is h_2(z), z=0.3",
+   "computed": "0.7126521144336545822085022",
+   "printed": "0.7126521144336545822085022",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q of L(q,qz) vanishes, z=0.3",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S4)",
+   "what": "coefficient of q^2 equals g_2(z) = -z/[8(1+z^2)^(5/2)], z=0.3",
+   "computed": "-0.03023187079858023501720161",
+   "printed": "-0.03023187079858023501720161",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^3 vanishes, z=0.3",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "g_2(0.3)",
+   "computed": "-0.03023187079858024",
+   "printed": "-0.0302318708",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^0 of L(q,qz) is h_2(z), z=1",
+   "computed": "0.2928932188134524755991556",
+   "printed": "0.2928932188134524755991556",
+   "deviation": "1.15e-41",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q of L(q,qz) vanishes, z=1",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S4)",
+   "what": "coefficient of q^2 equals g_2(z) = -z/[8(1+z^2)^(5/2)], z=1",
+   "computed": "-0.02209708691207961013752639",
+   "printed": "-0.02209708691207961013752639",
+   "deviation": "3.59e-43",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^3 vanishes, z=1",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "g_2(1) = -1/(32 sqrt 2)",
+   "computed": "-0.02209708691207961013752639",
+   "printed": "-0.02209708691207961013752639",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-35",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^0 of L(q,qz) is h_2(z), z=3",
+   "computed": "0.05131670194948620040033194",
+   "printed": "0.05131670194948620040033194",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q of L(q,qz) vanishes, z=3",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S4)",
+   "what": "coefficient of q^2 equals g_2(z) = -z/[8(1+z^2)^(5/2)], z=3",
+   "computed": "-0.001185854122563142249499585",
+   "printed": "-0.001185854122563142249499585",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "coefficient of q^3 vanishes, z=3",
+   "computed": "0.0",
+   "printed": "0.0",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S1",
+   "what": "g_2(3)",
+   "computed": "-0.001185854122563142",
+   "printed": "-0.0011858541",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9",
+   "what": "[L(q,qz) - h(z)]/q^2 -> g_3(z) = -1/[12(1+z^2)^2], z=0.3 (q = 1e-4)",
+   "computed": "-0.0701399994551147489047986",
+   "printed": "-0.07013999943888000448895996",
+   "deviation": "2.31e-10",
+   "criterion": "relative deviation <= 1.0e-6",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9",
+   "what": "[L(q,qz) - h(z)]/q^2 -> g_3(z) = -1/[12(1+z^2)^2], z=1 (q = 1e-4)",
+   "computed": "-0.02083333332291666666573661",
+   "printed": "-0.02083333333333333333333333",
+   "deviation": "5.0e-10",
+   "criterion": "relative deviation <= 1.0e-6",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.9",
+   "what": "[L(q,qz) - h(z)]/q^2 -> g_3(z) = -1/[12(1+z^2)^2], z=3 (q = 1e-4)",
+   "computed": "-0.0008333333331500000000366071",
+   "printed": "-0.0008333333333333333333333333",
+   "deviation": "2.2e-10",
+   "criterion": "relative deviation <= 1.0e-6",
+   "pass": true
+  }
+ ]
+}

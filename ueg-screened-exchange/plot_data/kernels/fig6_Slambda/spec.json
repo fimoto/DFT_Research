@@ -1,0 +1,188 @@
+{
+ "figure": "fig_Slambda",
+ "size_inches": [
+  3.4,
+  2.5
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.125,
+    0.10999999999999999,
+    0.775,
+    0.77
+   ],
+   "title": "",
+   "xlabel": "$\\Lambda$",
+   "ylabel": "$S(\\Lambda)=\\mathcal{K}[b_\\Lambda]\\,/\\,e_{2x}$",
+   "xscale": "log",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 10.799999999999999,
+   "xlim": [
+    0.00588843655355589,
+    676.0829753919819
+   ],
+   "ylim": [
+    0.0,
+    2.6
+   ],
+   "xticks": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+   ],
+   "yticks": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$S(\\Lambda)$",
+     "file": "ax0_00_line_S_Lambda.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$1+(C_1^\\Lambda\\log\\Lambda+C_0^\\Lambda)/\\Lambda$",
+     "file": "ax0_01_line_1_C_1_Lambda_log_Lambda_C_0_Lambda_Lambd.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d62728ff",
+     "linestyle": "--",
+     "linewidth": 1.2,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d62728ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child2",
+     "file": "ax0_02_line_child2.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#595959ff",
+     "linestyle": "-",
+     "linewidth": 0.8,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#595959ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {},
+   "legend": {
+    "texts": [
+     "$S(\\Lambda)$",
+     "$1+(C_1^\\Lambda\\log\\Lambda+C_0^\\Lambda)/\\Lambda$"
+    ],
+    "loc": 2
+   },
+   "texts": [
+    {
+     "text": "$S(\\infty)=1$: Onsager",
+     "x": 0.012,
+     "y": 1.06,
+     "coordinates": "data",
+     "fontsize": 7.5,
+     "ha": "left",
+     "va": "baseline",
+     "color": "#404040ff",
+     "rotation": 0.0
+    }
+   ]
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "sans-serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 9.0,
+  "axes.labelsize": 9.0,
+  "xtick.labelsize": 8.0,
+  "ytick.labelsize": 8.0,
+  "legend.fontsize": 8.0,
+  "lines.linewidth": 1.2,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavusans",
+  "savefig.bbox": "tight",
+  "savefig.pad_inches": 0.02
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "KERNELS",
+ "figure_number": 6,
+ "latex_label": "app-fig:Slambda",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_Slambda.pdf",
+ "produced_by": "figs/make_lorentzian_figs.py"
+}

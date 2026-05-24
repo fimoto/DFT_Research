@@ -1,0 +1,77 @@
+{
+  "dataset": "map",
+  "error_definition": "sqrt((sample_var(term1)+sample_var(term2))/R); independent term scrambles",
+  "mean_mry": 17.05337114607146,
+  "metadata": {
+    "runtime": {
+      "packages": {
+        "matplotlib": "3.10.8",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "threadpoolctl": "3.6.0"
+      },
+      "python": "3.12.14"
+    },
+    "sources": {
+      "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+      "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+      "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+      "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+      "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+      "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+      "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+      "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+      "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+      "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+      "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+      "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+      "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+    },
+    "units": "energies Ry unless key ends in mry; momenta k_F"
+  },
+  "rs": 6,
+  "se_mry": 0.11884620361643836,
+  "settings": {
+    "chunk_power": 15,
+    "generator": "scipy scrambled Sobol, d=9",
+    "m": 17,
+    "q_scale": 2,
+    "replicates": 8,
+    "seed": 20260713
+  },
+  "term_replicates_ry": [
+    [
+      -0.020619863377293435,
+      -0.011304330054274826
+    ],
+    [
+      -0.020539580296251955,
+      -0.010541813271655365
+    ],
+    [
+      -0.02047850930297397,
+      -0.010369674636717174
+    ],
+    [
+      -0.020433448189407864,
+      -0.010651175329164068
+    ],
+    [
+      -0.020739178499087987,
+      -0.010734127498787981
+    ],
+    [
+      -0.020750326398356812,
+      -0.010754951962354257
+    ],
+    [
+      -0.02063077689239557,
+      -0.010569741963193609
+    ],
+    [
+      -0.02028917514728398,
+      -0.011032900702539643
+    ]
+  ],
+  "zeta": 1
+}

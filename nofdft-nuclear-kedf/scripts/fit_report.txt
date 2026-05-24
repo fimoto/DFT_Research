@@ -1,0 +1,9 @@
+== shared (B=14, {'eta_h': 12.0, 'ridge': 0.01, 'sreg': 0.01}, 3 path rows)
+shared: s=-2.004040 max|dg|=1.2134
+O16   fixed-density d = 0.1083   min chi(diag band) =     4.83 (soft target >= 5)
+Ca40  fixed-density d = 0.0904   min chi(diag band) =    36.26 (soft target >= 5)
+A80   fixed-density d = 0.0941   min chi(diag band) =    41.88 (soft target >= 5)
+   path path_A80_xi0.35.dat    Delta E = +0.4104 MeV (soft target >= 2)
+   path path_A80_xi0.60.dat    Delta E = +0.2910 MeV (soft target >= 2)
+   path path_A80_xi1.00.dat    Delta E = +1.0933 MeV (soft target >= 2)
+A140  fixed-density d = 0.0788   min chi(diag band) =    16.79 (soft target >= 5)

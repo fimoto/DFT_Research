@@ -1,0 +1,16 @@
+! KS reference for A80 (A=80, N_q=40), nr=500 grid.
+! Outputs: species density, tau/NLF reference table, levels, history.
+! nr=250 production input = linear resample (scripts/resample_ks_density.py).
+&input
+  run_ks=.true. run_nlf=.false. run_derivative=.false. run_teacher=.false.
+  run_deriv_check=.false. run_ite=.false. run_minimize=.false. run_diagscf=.false.
+  A=80 npart_q=40
+  nr=500 rbox=20.0d0 lmax=6
+  max_scf=400 scf_tol=1.0d-8 mix_alpha=0.3d0
+  init_radius=3.5d0 init_diffuseness=0.6d0
+  density_species_file='ks_A80_species.dat'
+  density_total_file='ks_A80_total.dat'
+  levels_file='ks_A80_levels.dat'
+  history_file='ks_A80_history.dat'
+  ks_nlf_file='ks_nlf_A80.dat'
+/

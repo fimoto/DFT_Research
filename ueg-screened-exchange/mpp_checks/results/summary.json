@@ -1,0 +1,80 @@
+{
+ "scripts": {
+  "c01_lindhard_d": {
+   "exit_code": 0,
+   "n_checks": 41,
+   "n_fail": 0,
+   "seconds": 4.3
+  },
+  "c02_ring_d": {
+   "exit_code": 0,
+   "n_checks": 43,
+   "n_fail": 0,
+   "seconds": 20.4
+  },
+  "c03_response_3d": {
+   "exit_code": 0,
+   "n_checks": 18,
+   "n_fail": 0,
+   "seconds": 40.5
+  },
+  "c04_R2": {
+   "exit_code": 0,
+   "n_checks": 33,
+   "n_fail": 0,
+   "seconds": 183.0
+  },
+  "c05_a2l": {
+   "exit_code": 0,
+   "n_checks": 17,
+   "n_fail": 0,
+   "seconds": 1.6
+  },
+  "c06_finiteq_2d": {
+   "exit_code": 0,
+   "n_checks": 16,
+   "n_fail": 0,
+   "seconds": 198.9
+  },
+  "c07_screened_line": {
+   "exit_code": 0,
+   "n_checks": 6,
+   "n_fail": 0,
+   "seconds": 530.2
+  },
+  "c08_spin_2d": {
+   "exit_code": 0,
+   "n_checks": 20,
+   "n_fail": 0,
+   "seconds": 2.2
+  },
+  "c09_kite_3d": {
+   "exit_code": 0,
+   "n_checks": 6,
+   "n_fail": 0,
+   "seconds": 379.7
+  },
+  "c10_hd_fit": {
+   "exit_code": 0,
+   "n_checks": 33,
+   "n_fail": 0,
+   "seconds": 0.2
+  },
+  "c11_lowdensity_kite": {
+   "exit_code": 0,
+   "n_checks": 16,
+   "n_fail": 0,
+   "seconds": 4.9
+  },
+  "c12_static_dassarma": {
+   "exit_code": 0,
+   "n_checks": 16,
+   "n_fail": 0,
+   "seconds": 3632.4
+  }
+ },
+ "n_checks": 265,
+ "n_fail": 0,
+ "mode": "full-mc",
+ "seconds": 4998.3
+}

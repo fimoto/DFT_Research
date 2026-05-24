@@ -1,0 +1,19 @@
+{
+  "status": "UNEXECUTED in Wolfram kernel",
+  "validation": "Exact notebook source embedding only; no Wolfram parser or kernel execution claimed",
+  "exact_notebook_source_embedding": true,
+  "manuscript_sha256": "2734bfed86add539e285e93f74de4c824387349eee0c34d41c4447b020f90d8c",
+  "manuscript_expanded_sha256": "c5a22350f487ffd289882898a385f7450d9af7d845e597d0a7de4f58265f6c78",
+  "manuscript_documents_sha256": {
+    "JPA_manuscript.tex": "2734bfed86add539e285e93f74de4c824387349eee0c34d41c4447b020f90d8c",
+    "JPA_supplemental.tex": "88afe6dd56b05ef8628213a1c142f3f7db304eecfc8107e00b4ffefebf65279b",
+    "references.bib": "ade5407db6596f5ad200e31cd4a854fe14f1d61645c0e278217d055b05bb6db3",
+    "main_expanded": "2734bfed86add539e285e93f74de4c824387349eee0c34d41c4447b020f90d8c",
+    "supplement_expanded": "88afe6dd56b05ef8628213a1c142f3f7db304eecfc8107e00b4ffefebf65279b"
+  },
+  "wolfram_source_sha256": "171e60b599f1dfa123a5db453e402384a005c42c490428d1c10848dae4f1f2d4",
+  "wolfram_notebook_sha256": "4dd03d65c729d39bfb72d766ad2104528e5aa860d8b7a12238f35c6066bbaf67",
+  "scope": "Selected principal symbolic and numerical checks; not a complete port of the Python verification suite",
+  "manuscript_revision": "2026-09-29 consolidated JPA source; stable equation labels retained",
+  "label_revision": "Terminology and path spelling normalized. Exact source embedding rebuilt. No Wolfram execution claimed."
+}

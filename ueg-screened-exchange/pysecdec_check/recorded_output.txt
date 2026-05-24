@@ -1,0 +1,6 @@
+pySecDec 1.6.6 | Python 3.12.3 (run 2026-09-16, fresh pySecDec environment)
+OK   Fp int x^-4 J_C dx = -(8/5) sqrt(2pi) G(3/4)/G(1/4)
+      pySecDec -1.35554093601 +- 9.6e-10   exact -1.35554093567   |diff| 3.4e-10   delta^-1: +0.0e+00   [1s]
+OK   M_E = (176/75) sqrt(2pi) G(3/4)/G(1/4)
+      pySecDec 1.98812670560 +- 8.1e-11   exact 1.98812670565   |diff| 4.9e-11   no negative orders   [0s]
+ALL OK

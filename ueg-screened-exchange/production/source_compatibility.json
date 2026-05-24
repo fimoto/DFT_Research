@@ -1,0 +1,300 @@
+{
+ "policy": "Only complete, explicitly recorded/current source maps are accepted. Archived source-path keys use the current public package name; hash values still identify the original executed code. Numerical payloads and settings are locked. Unknown source revisions fail closed.",
+ "revisions": [
+  {
+   "changed_files": [
+    "external/benites_direct.py",
+    "production/common.py",
+    "production/compute.py",
+    "src/ueg_exchange/lindhard.py"
+   ],
+   "changed_lindhard_functions": [
+    "f_L",
+    "sigma_x"
+   ],
+   "current_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "8641f2ba2bfffe1ced9f6176f3c7aa1b9855e2bea2246519e9776a02ad9151ff",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "2e622eb9760b211b15551d191ec179eb3821e32ed4c9a51a63005a9848822ecd",
+    "production/compute.py": "31001c56f0cf0c4b2962c9fc40bbfd3d57e7ed00fb1390b6d0c7555d147caf9b",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "ed99e24b433b78f3eff2b1f823faee2aac3b960042bf47a8db1d0686ef71baf2"
+   },
+   "date": "2026-09-28",
+   "evidence": "audit/20260928/production_audit.json",
+   "reason": "Numerical stability fix in unused auxiliary f_L and sigma_x functions. The production G function and every function in its dependency path are unchanged. common.py/compute.py changes implement provenance compatibility only. external/benites_direct.py header now describes its actual production role; executable definitions are unchanged.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "production/config.json",
+    "production/common.py",
+    "production/compute.py",
+    "external/benites_direct.py",
+    "src/ueg_exchange/lindhard.py",
+    "src/ueg_exchange/constants.py",
+    "prb/reviewer_numerics.py"
+   ],
+   "current_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "6d70225298374f8d8868deff6d0a103acd8fd993e2997e39c04ea9bd5da545c9",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "production/common.py": "7fcd88d08d86ec9815639dfcd6fe1df310278ba82bbe28ebb43d9162bb187288",
+    "production/compute.py": "4a38b1ad506a4c3f1b14e1d1f786650bf71a1eec35ba0e2cd5a1609d7129e610",
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64"
+   },
+   "date": "2026-09-28",
+   "evidence": "audit/notation_revision/python_regression.json",
+   "reason": "Literature-based notation migration: imaginary frequency nu, q_tf_sq, Lindhard shape API, full W_lambda and unnormalized coupling average, common response units. Numerical production integrands and sampled quadratures agree bitwise with the previous audited release. The isolated pre-existing derivative NaN at q=2,nu=0 is replaced by its analytic one-sided limit; no historical production record is rewritten. Legacy grid-setting keys are translated only at the reference-comparison boundary.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "production/config.json",
+    "production/common.py",
+    "production/compute.py",
+    "external/benites_direct.py",
+    "src/ueg_exchange/lindhard.py",
+    "src/ueg_exchange/constants.py",
+    "prb/reviewer_numerics.py",
+    "external/kite-numerics/mc/xc_mc.py"
+   ],
+   "current_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "4e0f6b82d9d512edda0f297f45d7fe11879ea8aebf55a19be6fc9fc6fb8c9338",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "69e33f0957ab6521b8ae3242c0d9c2b23aa9699c6076ffd3a58db8cc65f50183",
+    "prb/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "production/common.py": "20e4d4840071107147edf27171d540643d074fec3f00daec424d92e465925ff0",
+    "production/compute.py": "4a38b1ad506a4c3f1b14e1d1f786650bf71a1eec35ba0e2cd5a1609d7129e610",
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64"
+   },
+   "date": "2026-09-29",
+   "evidence": "audit/publication_revision_20260929/migration_integrity.json",
+   "reason": "Public package and Lorentzian selector terminology aligned with the current manuscripts. Numerical-body ASTs are identical to the preceding audited release after these exact name substitutions. Entry validation now rejects unknown selectors and invalid Lorentzian widths; valid computations are unchanged. The earlier numerical revisions remain documented above. No numerical record was regenerated by this migration.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "production/common.py",
+    "production/compute.py",
+    "production/render.py",
+    "production/verify.py",
+    "spin/reviewer_numerics.py"
+   ],
+   "current_sources": {
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/common.py": "142e14240c7099b25a3569ad51e6f135c29b14c7ed84ff7ea2b9942de8cfc793",
+    "production/compute.py": "169c8b3db37979e5663b9055687bc90d62f2fed1966a80c8454b700774f1b251",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "external/benites_direct.py": "a64e28825a5291100069864e64077d4b99eb26160f785187dea318d4ac6ac741",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "spin/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "external/kite-numerics/mc/xc_mc.py": "69e33f0957ab6521b8ae3242c0d9c2b23aa9699c6076ffd3a58db8cc65f50183",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2"
+   },
+   "date": "2026-10-03",
+   "evidence": "Directory rename only: prb/ -> spin/ and jpa_* -> kernels_*. Source files differ from the previous audited revision only in these path strings; numerical code is unchanged.",
+   "reason": "Journal-neutral directory names. Historical records keep their recorded path key prb/reviewer_numerics.py, which was the path when they were produced.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "production/render.py"
+   ],
+   "current_sources": {
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/common.py": "142e14240c7099b25a3569ad51e6f135c29b14c7ed84ff7ea2b9942de8cfc793",
+    "production/compute.py": "169c8b3db37979e5663b9055687bc90d62f2fed1966a80c8454b700774f1b251",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "external/benites_direct.py": "a64e28825a5291100069864e64077d4b99eb26160f785187dea318d4ac6ac741",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "spin/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "external/kite-numerics/mc/xc_mc.py": "69e33f0957ab6521b8ae3242c0d9c2b23aa9699c6076ffd3a58db8cc65f50183",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2"
+   },
+   "date": "2026-10-04",
+   "evidence": "Figure change only: panel (c) of Fig. 4 now shows q_*^2 (e/e_lead - 1) instead of (data - profile)/sigma, and legend text was updated. Numerical payloads and the other products are unchanged; product_lock.json was updated for fig_shell.pdf and spin_fig2_shell_points.dat.",
+   "reason": "Readability of Fig. 4 (relative deviation collapses for the two lowest densities).",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "production/render.py",
+    "production/verify.py",
+    "external/benites_direct.py",
+    "external/kite-numerics/analytic/lindhard.py"
+   ],
+   "current_sources": {
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/common.py": "142e14240c7099b25a3569ad51e6f135c29b14c7ed84ff7ea2b9942de8cfc793",
+    "production/compute.py": "169c8b3db37979e5663b9055687bc90d62f2fed1966a80c8454b700774f1b251",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "external/benites_direct.py": "83e24e593b97ac1f666e409539e2d4999c3043076b16efe7a197be0539151b4d",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "spin/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "external/kite-numerics/mc/xc_mc.py": "69e33f0957ab6521b8ae3242c0d9c2b23aa9699c6076ffd3a58db8cc65f50183",
+    "external/kite-numerics/analytic/lindhard.py": "712757f0e6ba6e9c3e2a226c9ce66e89a1dd24d00e0945ff33762e97d9678417",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2"
+   },
+   "date": "2026-10-04",
+   "evidence": "Audit fixes: (1) error bars of Fig. 4(c) propagated with Q^4 instead of Q^2 (centre values unchanged, product_lock.json updated for fig_shell.pdf); (2) release_paths skips .git and .venv; (3) estimate() validates rs, zeta, q_scale; (4) auxiliary Lindhard G uses the stable quadrature for q>4. No numerical payload changes.",
+   "reason": "Pre-release audit of 2026-10-04.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  },
+  {
+   "changed_files": [
+    "external/kite-numerics/analytic/lindhard.py",
+    "production/verify.py"
+   ],
+   "current_sources": {
+    "production/config.json": "a80f16599b7b24b99092a26e8a3d637f3a622d34efe8a105df6fba78abe322c6",
+    "production/common.py": "142e14240c7099b25a3569ad51e6f135c29b14c7ed84ff7ea2b9942de8cfc793",
+    "production/compute.py": "169c8b3db37979e5663b9055687bc90d62f2fed1966a80c8454b700774f1b251",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "external/benites_direct.py": "83e24e593b97ac1f666e409539e2d4999c3043076b16efe7a197be0539151b4d",
+    "src/ueg_exchange/lindhard.py": "64d27e33b3d34f99926defa00b02cc3d72d4266f7cec4430f6c11cf7b03f1b64",
+    "src/ueg_exchange/constants.py": "acfdba5449eb1f57ae621f4286e034d54062e8b3846a71030e161a96772be803",
+    "spin/reviewer_numerics.py": "966e9d0e09fba9f3107a9d65574a5e77ed5698458c7b4243b13b1fb92e00128e",
+    "external/kite-numerics/mc/xc_mc.py": "69e33f0957ab6521b8ae3242c0d9c2b23aa9699c6076ffd3a58db8cc65f50183",
+    "external/kite-numerics/analytic/lindhard.py": "7847b5974bcc52a72295e80e08ddc4466041cb9231552dd4d56bcb1fb7628175",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2"
+   },
+   "date": "2026-10-04",
+   "evidence": "Re-audit fixes: the stable-quadrature branch of the auxiliary Lindhard function G now starts at q>100 instead of q>4, above the largest production grid node (q=60), so every released grid record is reproduced bit for bit (verified with verify.py --recompute grid --rs 1); release_paths also skips .pytest_cache. No numerical payload changes.",
+   "reason": "Re-audit of 2026-10-04: the q>4 switch changed the fixed-grid payload at the 1e-14 level and broke the exact-reproduction check.",
+   "recorded_sources": {
+    "data/appendixB_grid_extended.dat": "03cec3cc02bcfc065082de7f72a881d89487f1261c9dae4cd0e18fba2443dac2",
+    "data/appendixB_grid_published.dat": "0ba53ac0d7a5ed9b9706e9e3034bc2873648bd1c877241e492067f0845ffb250",
+    "external/benites_direct.py": "34356a45ec4d349d10bf61fcf3fb95800c97d564cf818d8f55630c656da78623",
+    "external/kite-numerics/analytic/lindhard.py": "e8dd9882208c5ec2c63a1ffe4a3ff211732897eae279b9a42e49de59b1bb333f",
+    "external/kite-numerics/mc/xc_mc.py": "a1156afc55533bf991e9802f7aaaa326f0ce7c53f6ae138519db5acf476b6ed0",
+    "prb/reviewer_numerics.py": "0ac1b9064ead0b0a94facca59ed503f1a4b926b33aaa4fcc3f9ffaef709f8b54",
+    "production/common.py": "a7ab529fa4cbac2fbb2f8946f453cd14e7b45f400c7b0b9226c6bbf5de388ac8",
+    "production/compute.py": "47c630b4eb54c29622622389c7454711d09c515907c954ed0a165659da84acc7",
+    "production/config.json": "cce64ced693a3dc600de606466bff06a0cecd8f71370eaa9ac61347a1d7d4126",
+    "production/runtime.py": "ba5a64b7fe365eb09df81ed4bf074320215a1db59b045f5e750fa3f5a6411422",
+    "production/runtime_lock.json": "ccac5b619bd728c4239582fd8732bfd5d69703ec7831951c625accd18874a698",
+    "src/ueg_exchange/constants.py": "a98cee4c2c699dcf6435226e0863b5012bffd0c9c0f1e3e01df8224402fae59c",
+    "src/ueg_exchange/lindhard.py": "513bff8fb390637e8aeee9d902e2cf4455d82ecc1937453f3c2d773dc87b42ac"
+   }
+  }
+ ],
+ "schema": 1
+}

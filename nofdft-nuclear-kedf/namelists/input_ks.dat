@@ -1,0 +1,15 @@
+! Kohn-Sham SkP(no spin-orbit) reference solver, N=Z, spherical.
+! Produces the KS density and the KS NLF reference (tau_KS, NLF_KS).
+&input
+  run_ks=.true. run_nlf=.false. run_derivative=.false. run_teacher=.false.
+  run_deriv_check=.false. run_ite=.false. run_minimize=.false. run_diagscf=.false.
+  A=40 npart_q=20
+  nr=250 rbox=20.0d0 lmax=6
+  max_scf=400 scf_tol=1.0d-8 mix_alpha=0.3d0
+  init_radius=3.5d0 init_diffuseness=0.6d0
+  density_species_file='ks_Ca40_species.dat'
+  density_total_file='ks_Ca40_total.dat'
+  levels_file='ks_Ca40_levels.dat'
+  history_file='ks_Ca40_history.dat'
+  ks_nlf_file='ks_nlf_Ca40.dat'
+/

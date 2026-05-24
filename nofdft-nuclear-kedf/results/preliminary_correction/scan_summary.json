@@ -1,0 +1,14 @@
+{
+ "kernel": "kernels/diagnostics/eg_NP14_shared.dat (kernel_fit.py shared_nopath)",
+ "shift": -1.100868,
+ "nmu24_ite_8000_rho_c": {
+  "0.0": 0.0608,
+  "0.2": 0.0609,
+  "0.5": 0.0612,
+  "1.0": 0.0617,
+  "2.0": 0.0629
+ },
+ "notes": "KS-initialized A=80; KS rho_c=0.1769",
+ "diag_s2_0_rho_c": 0.0608,
+ "nmu48_ite_3000_s2_0_rho_c": 0.0626
+}

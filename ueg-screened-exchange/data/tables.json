@@ -1,0 +1,474 @@
+{
+  "_note": "PRB entries are generated from production/raw. JPA entries belong to the separate companion project.",
+  "block_table1_reduction_check": {
+    "Lambda": 1.0,
+    "direct_total_mRy": 112.859,
+    "large_q_tail_mRy": 1.142,
+    "note": "32 radial nodes give 112.15 and a 0.7 mRy discretization error, several times the seed scatter; the grid must be stated with the result.",
+    "one_d_formula_mRy": 112.868,
+    "provenance": "fortran/app/check_reduction_endtoend.f90 (tails computed in-script, model terms not bounds)",
+    "radial_nodes": 128,
+    "samples_per_node": 100000,
+    "seed_scatter_mRy": 0.109,
+    "seeds": 6,
+    "small_q_tail_mRy": 0.026
+  },
+  "companion_appendixB_direct": {
+    "provenance": "production/config.json, production/raw and production/render.py; energies mRy",
+    "rows": [
+      {
+        "direct": {
+          "mean_mry": 27.834315025336405,
+          "rs": 1,
+          "se_mry": 0.0204584856590282,
+          "zeta": 0.0
+        },
+        "quadrature": {
+          "extended": {
+            "bare_discrepancy_mry": 0.00718515135369735,
+            "bare_se_mry": 0.14552266271113315,
+            "frequency_shift_mry": 1.2214496081242032e-10,
+            "mean_mry": 27.87798730480298,
+            "replicates_mry": [
+              27.751500224575416,
+              27.700972208731045,
+              27.783130904839645,
+              27.886172054390425,
+              28.01095447709254,
+              28.021732727396852,
+              27.764725214240364,
+              28.104710627157523
+            ],
+            "se_mry": 0.05328039607369883
+          },
+          "published": {
+            "bare_discrepancy_mry": -0.0425358032933163,
+            "bare_se_mry": 0.14602069671871168,
+            "frequency_shift_mry": 2.926685560566966e-10,
+            "mean_mry": 27.877487898268235,
+            "replicates_mry": [
+              27.751611632715722,
+              27.701331178993385,
+              27.783241838512343,
+              27.886028162931115,
+              28.011065760586863,
+              28.021845828862673,
+              27.76002671767145,
+              28.104752065872336
+            ],
+            "se_mry": 0.05344551099121001
+          },
+          "rs": 1
+        },
+        "rs": 1
+      },
+      {
+        "direct": {
+          "mean_mry": 19.505430570245853,
+          "rs": 2,
+          "se_mry": 0.026946497520575232,
+          "zeta": 0.0
+        },
+        "quadrature": {
+          "extended": {
+            "bare_discrepancy_mry": 0.00718515135369735,
+            "bare_se_mry": 0.14552266271113315,
+            "frequency_shift_mry": 6.836433641410622e-10,
+            "mean_mry": 19.581162345146645,
+            "replicates_mry": [
+              19.51404151401305,
+              19.44195837993248,
+              19.414823856399696,
+              19.582470991325057,
+              19.76624788922028,
+              19.73943696809257,
+              19.387987448749133,
+              19.802331713440896
+            ],
+            "se_mry": 0.05932553958884495
+          },
+          "published": {
+            "bare_discrepancy_mry": -0.0425358032933163,
+            "bare_se_mry": 0.14602069671871168,
+            "frequency_shift_mry": 3.1205571460191095e-10,
+            "mean_mry": 19.580765617020834,
+            "replicates_mry": [
+              19.514264320245168,
+              19.44235531226539,
+              19.415045713806503,
+              19.582512559558975,
+              19.76647044614146,
+              19.739663160485982,
+              19.38331310923251,
+              19.802500314430677
+            ],
+            "se_mry": 0.0596020215995606
+          },
+          "rs": 2
+        },
+        "rs": 2
+      },
+      {
+        "direct": {
+          "mean_mry": 6.684720941217116,
+          "rs": 5,
+          "se_mry": 0.035896585003667665,
+          "zeta": 0.0
+        },
+        "quadrature": {
+          "extended": {
+            "bare_discrepancy_mry": 0.00718515135369735,
+            "bare_se_mry": 0.14552266271113315,
+            "frequency_shift_mry": 2.331628223828375e-10,
+            "mean_mry": 6.815070737271439,
+            "replicates_mry": [
+              6.85937761742958,
+              6.796142440529366,
+              6.509336273235149,
+              6.811731350432211,
+              7.068376753369115,
+              6.96556385323548,
+              6.507495144461451,
+              7.002542465479159
+            ],
+            "se_mry": 0.07468584250574085
+          },
+          "published": {
+            "bare_discrepancy_mry": -0.0425358032933163,
+            "bare_se_mry": 0.14602069671871168,
+            "frequency_shift_mry": -5.418616666474918e-10,
+            "mean_mry": 6.815000681140247,
+            "replicates_mry": [
+              6.859934551069671,
+              6.796804142966593,
+              6.509890835397982,
+              6.812175545231035,
+              7.068933063690309,
+              6.96612924963231,
+              6.503086242421524,
+              7.0030518187125494
+            ],
+            "se_mry": 0.07505063916349816
+          },
+          "rs": 5
+        },
+        "rs": 5
+      }
+    ]
+  },
+  "companion_secVC_ferro": {
+    "columns": [
+      "rs",
+      "e2b_unpolarized",
+      "err"
+    ],
+    "provenance": "production/config.json, production/raw and production/render.py; energies mRy",
+    "rows": [
+      [
+        100,
+        -23.417673667651655,
+        0.09130446096031034
+      ],
+      [
+        200,
+        -24.94836511058959,
+        0.0941690276283252
+      ],
+      [
+        300,
+        -25.116674986230034,
+        0.09544804159702194
+      ],
+      [
+        500,
+        -24.752128251931875,
+        0.09678858920660253
+      ],
+      [
+        800,
+        -23.990178699834207,
+        0.09786362002654403
+      ]
+    ]
+  },
+  "companion_tableII_residuals": {
+    "columns": [
+      "rs",
+      "direct",
+      "direct_err",
+      "brm",
+      "brm_err"
+    ],
+    "provenance": "production/config.json, production/raw and production/render.py; energies mRy",
+    "rows": [
+      [
+        0.1,
+        43.42417089526451,
+        0.017289834837537498,
+        43.53,
+        0.18
+      ],
+      [
+        1,
+        27.82821095031233,
+        0.04540262212146838,
+        27.62,
+        0.84
+      ],
+      [
+        2,
+        19.51476663215898,
+        0.057677167638954946,
+        20.31,
+        0.33
+      ],
+      [
+        3,
+        14.01108391163515,
+        0.06537552337738269,
+        14.85,
+        0.68
+      ],
+      [
+        5,
+        6.714592826985132,
+        0.07571571938669311,
+        8.04,
+        0.34
+      ],
+      [
+        7,
+        1.8859062693869362,
+        0.08297424867424175,
+        2.23,
+        0.41
+      ],
+      [
+        10,
+        -3.0719051546597154,
+        0.09093301337982138,
+        -2.11,
+        0.41
+      ],
+      [
+        20,
+        -11.669486462451175,
+        0.1059838889167835,
+        -11.13,
+        0.9
+      ],
+      [
+        30,
+        -15.78861448400054,
+        0.1137390862548702,
+        -14.85,
+        0.28
+      ],
+      [
+        50,
+        -19.854021832319006,
+        0.12192081402503636,
+        -19.45,
+        0.65
+      ]
+    ]
+  },
+  "companion_tableI_strong_screening": {
+    "columns": [
+      "rs",
+      "direct",
+      "direct_err",
+      "three_term",
+      "brm_tableIX",
+      "brm_err"
+    ],
+    "provenance": "production/config.json, production/raw and production/render.py; energies mRy",
+    "rows": [
+      [
+        1000,
+        -23.4184298891722,
+        0.053985073903546045,
+        -24.008084806879154,
+        -23.55,
+        0.36
+      ],
+      [
+        5000,
+        -18.919464004232665,
+        0.06098675663983662,
+        -19.076478074840725,
+        -18.44,
+        0.18
+      ],
+      [
+        20000,
+        -14.962115746587749,
+        0.06815212315895447,
+        -14.877939909580249,
+        -14.35,
+        0.22
+      ],
+      [
+        200000,
+        -9.132449562414893,
+        0.08470391087700055,
+        -9.248721523598974,
+        -7.13,
+        0.15
+      ],
+      [
+        1000000,
+        -6.347660536380376,
+        0.12729425519461957,
+        -6.448001819473204,
+        -3.89,
+        0.16
+      ],
+      [
+        100000000,
+        -2.2182683803070176,
+        0.2149108024330839,
+        -2.157533735365325,
+        null,
+        null
+      ]
+    ]
+  },
+  "jpa_physical_scales": {
+    "S_max": {
+      "at_Lambda": 1.21,
+      "value": 2.344
+    },
+    "correlation_energy_PW92_mRy": {
+      "2": -89.6,
+      "5": -56.4
+    },
+    "expansion_ordered_for_rs_much_greater_than": 43.1,
+    "log2_term_mRy": {
+      "2": -0.826,
+      "5": -11.131
+    },
+    "provenance": "q_* = (4 a_tau rs/3)^{1/4} with a_tau = 4 alpha_L/pi; S from figs/phi_grid.npy via the master formula; PW92 values quoted for context only.",
+    "q_star_over_kF": {
+      "1": 0.9698,
+      "100": 3.0668,
+      "18": 1.9976,
+      "2": 1.1533,
+      "5": 1.4502
+    },
+    "rs_where_qstar_equals_2kF": 18.1
+  },
+  "jpa_poles_figure": {
+    "columns": [
+      "rs",
+      "static_one_pole_mRy",
+      "static_all_poles_mRy",
+      "difference_mRy"
+    ],
+    "provenance": "figs/make_poles_fig.py; static kernel X_c from figs/xc_grid.npy with the analytic endpoints, Yukawa pole from highdensity.yukawa_pole.",
+    "rows": [
+      [
+        1,
+        34.02,
+        34.43,
+        0.41
+      ],
+      [
+        2,
+        28.15,
+        28.97,
+        0.82
+      ],
+      [
+        3,
+        24.28,
+        25.49,
+        1.21
+      ],
+      [
+        4,
+        21.4,
+        22.98,
+        1.58
+      ],
+      [
+        5,
+        19.11,
+        21.06,
+        1.94
+      ],
+      [
+        6,
+        17.24,
+        19.51,
+        2.28
+      ],
+      [
+        8,
+        14.28,
+        17.17,
+        2.88
+      ],
+      [
+        10,
+        12.04,
+        15.44,
+        3.4
+      ]
+    ]
+  },
+  "jpa_spin_comparison": {
+    "columns": [
+      "zeta",
+      "rs",
+      "this_work_mRy",
+      "this_work_err_mRy",
+      "brm_mRy"
+    ],
+    "provenance": "brm.correction(rs, zeta, m=18, replicates=8, seed=99) plus the Onsager constant; BRM column from Ref. Benites2024 Table IX.",
+    "rows": [
+      [
+        0,
+        1,
+        27.98,
+        0.07,
+        27.6
+      ],
+      [
+        0,
+        2,
+        19.68,
+        0.09,
+        20.3
+      ],
+      [
+        0,
+        5,
+        6.89,
+        0.12,
+        8.0
+      ],
+      [
+        1,
+        1,
+        36.32,
+        0.05,
+        36.1
+      ],
+      [
+        1,
+        2,
+        30.36,
+        0.07,
+        30.2
+      ],
+      [
+        1,
+        5,
+        19.78,
+        0.09,
+        20.1
+      ]
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+--- external/benites_direct.py.orig	2026-10-01 14:27:13.383522744 +0000
++++ external/benites_direct.py	2026-10-01 14:27:13.432382419 +0000
+@@ -533,6 +533,15 @@
+         raise ValueError("m must be >= 8")
+     if replicates < 2:
+         raise ValueError("replicates must be >= 2 to estimate an error bar")
++    # Input validation (audit F3, 1 Oct 2026): nonfinite or nonphysical inputs
++    # previously produced a finite energy with zero error after the nonfinite
++    # weights were masked out.
++    if not (np.isfinite(rs) and rs > 0):
++        raise ValueError("rs must be finite and positive")
++    if not (np.isfinite(zeta) and -1 <= zeta <= 1):
++        raise ValueError("zeta must be finite and within [-1, 1]")
++    if not (np.isfinite(q_scale) and q_scale > 0):
++        raise ValueError("q_scale must be finite and positive")
+     vals1: list[float] = []
+     vals2: list[float] = []
+     for rep in range(replicates):

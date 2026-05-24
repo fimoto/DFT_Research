@@ -1,0 +1,746 @@
+{
+ "figure": "fig_shell",
+ "size_inches": [
+  3.4,
+  6.1
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.21781805300245097,
+    0.7479052823315118,
+    0.7424760646446076,
+    0.19990892531876137
+   ],
+   "title": "(a) Radial energy density",
+   "xlabel": "$q$ (in units of $k_F$)",
+   "ylabel": "$-e(q;r_s)$ (Ry)",
+   "xscale": "log",
+   "yscale": "log",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    1.036606579780813,
+    430.37429772948315
+   ],
+   "ylim": [
+    1.5160904805562384e-10,
+    0.01805946103580516
+   ],
+   "xticks": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+   ],
+   "yticks": [
+    1e-12,
+    1e-10,
+    1e-08,
+    1e-06,
+    0.0001,
+    0.01,
+    1.0,
+    100.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$r_s=10^{3}$",
+     "file": "ax0_00_line_r_s_10_3.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.1,
+     "marker": "o",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child1",
+     "file": "ax0_01_line_child1.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x data, y axes fraction",
+     "color": "#1f77b4ff",
+     "linestyle": ":",
+     "linewidth": 0.7,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^{5}$",
+     "file": "ax0_02_line_r_s_10_5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff7f0eff",
+     "linestyle": "-",
+     "linewidth": 1.1,
+     "marker": "s",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child3",
+     "file": "ax0_03_line_child3.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x data, y axes fraction",
+     "color": "#ff7f0eff",
+     "linestyle": ":",
+     "linewidth": 0.7,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#ff7f0eff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^{7}$",
+     "file": "ax0_04_line_r_s_10_7.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#2ca02cff",
+     "linestyle": "-",
+     "linewidth": 1.1,
+     "marker": "^",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "file": "ax0_05_line_child5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x data, y axes fraction",
+     "color": "#2ca02cff",
+     "linestyle": ":",
+     "linewidth": 0.7,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#2ca02cff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0
+   },
+   "legend": {
+    "texts": [
+     "$r_s=10^{3}$",
+     "$r_s=10^{5}$",
+     "$r_s=10^{7}$"
+    ],
+    "loc": 0
+   },
+   "texts": []
+  },
+  {
+   "index": 1,
+   "position": [
+    0.21781805300245097,
+    0.420856102003643,
+    0.7424760646446076,
+    0.19990892531876137
+   ],
+   "title": "(b) Collapse onto the leading profile",
+   "xlabel": "$x=q/q_*$",
+   "ylabel": "$-q_*^2 e(q;r_s)$ (Ry)",
+   "xscale": "log",
+   "yscale": "log",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.21326984169727634,
+    7.033343242825487
+   ],
+   "ylim": [
+    3.8289945143410607e-07,
+    0.6447586131241146
+   ],
+   "xticks": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+   ],
+   "yticks": [
+    1e-09,
+    1e-07,
+    9.999999999999999e-06,
+    0.001,
+    0.1,
+    10.0,
+    1000.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$r_s=10^{3}$",
+     "file": "ax1_00_line_r_s_10_3.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "o",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^{5}$",
+     "file": "ax1_01_line_r_s_10_5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff7f0eff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "s",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^{7}$",
+     "file": "ax1_02_line_r_s_10_7.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#2ca02cff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "^",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "leading profile",
+     "file": "ax1_03_line_leading_profile.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#333333ff",
+     "linestyle": "-",
+     "linewidth": 1.1,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#333333ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0
+   },
+   "legend": {
+    "texts": [
+     "$r_s=10^{3}$",
+     "$r_s=10^{5}$",
+     "$r_s=10^{7}$",
+     "leading profile"
+    ],
+    "loc": 0
+   },
+   "texts": []
+  },
+  {
+   "index": 2,
+   "position": [
+    0.21781805300245097,
+    0.0938069216757742,
+    0.7424760646446076,
+    0.19990892531876137
+   ],
+   "title": "(c) Relative deviation, scaled by $q_*^2$",
+   "xlabel": "$x=q/q_*$",
+   "ylabel": "$q_*^2\\,[e(q;r_s)/e^{\\rm lead}(q)-1]$",
+   "xscale": "log",
+   "yscale": "symlog",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.21326984169727634,
+    7.033343242825487
+   ],
+   "ylim": [
+    -150.0,
+    3.0
+   ],
+   "xticks": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+   ],
+   "yticks": [
+    0.0,
+    -3.0,
+    -10.0,
+    -30.0,
+    -100.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_00_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "o",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_01_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_02_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_03_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff7f0eff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "s",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_04_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff7f0eff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#ff7f0eff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_05_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff7f0eff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#ff7f0eff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_06_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#2ca02cff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "^",
+     "markersize": 3.0,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_07_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#2ca02cff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#2ca02cff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax2_08_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#2ca02cff",
+     "linestyle": "None",
+     "linewidth": 1.0,
+     "marker": "_",
+     "markersize": 3.0,
+     "markerfacecolor": "#2ca02cff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child12",
+     "file": "ax2_09_line_child12.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#4c4c4cff",
+     "linestyle": "-",
+     "linewidth": 0.7,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#4c4c4cff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax2_10_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#1f77b4ff"
+     ],
+     "linewidths": [
+      1.0
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax2_11_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#ff7f0eff"
+     ],
+     "linewidths": [
+      1.0
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax2_12_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#2ca02cff"
+     ],
+     "linewidths": [
+      1.0
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0,
+    "linthresh": 2.0,
+    "linscale": 1.0
+   },
+   "containers": [
+    {
+     "type": "ErrorbarContainer",
+     "label": "$r_s=10^{3}$",
+     "data_line_index": 0,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    },
+    {
+     "type": "ErrorbarContainer",
+     "label": "$r_s=10^{5}$",
+     "data_line_index": 3,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    },
+    {
+     "type": "ErrorbarContainer",
+     "label": "$r_s=10^{7}$",
+     "data_line_index": 6,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    }
+   ],
+   "legend": {
+    "texts": [
+     "$r_s=10^{3}$",
+     "$r_s=10^{5}$",
+     "$r_s=10^{7}$"
+    ],
+    "loc": 1
+   },
+   "texts": []
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "sans-serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 9.0,
+  "axes.labelsize": 9.0,
+  "xtick.labelsize": "medium",
+  "ytick.labelsize": "medium",
+  "legend.fontsize": 7.5,
+  "lines.linewidth": 1.1,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavusans",
+  "savefig.bbox": null,
+  "savefig.pad_inches": 0.1
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "SPIN",
+ "figure_number": 4,
+ "latex_label": "fig:shell",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_shell.pdf",
+ "produced_by": "production/render.py"
+}

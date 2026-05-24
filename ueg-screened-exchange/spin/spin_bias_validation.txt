@@ -1,0 +1,10 @@
+PROVENANCE PASS: all 104 raw records match reference hashes, evaluator source hashes, and common sampling settings.
+NUM PASS: every exported residual agrees with direct subtraction of the three raw energy means.
+NUM PASS: all 104 error bars agree with the independent 3x3 covariance-matrix propagation for each term.
+NUM PASS: both endpoints vanish exactly and adding a common bare-exchange constant leaves every residual unchanged.
+EXACT PASS: common constants and the exchange-shaped leading term cancel; residual second and third coefficients assemble correctly.
+NUM PASS: zeta=0.8, rs=1: -0.629824805791 +/- 0.005670003085 mRy.
+NUM PASS: zeta=0.8, rs=10: +0.224252998179 +/- 0.008112140232 mRy.
+NUM PASS: zeta=0.8, rs=60: +0.638429263372 +/- 0.007604148498 mRy.
+SCOPE: uncertainties are empirical replicate standard errors; neither confidence coverage nor sampler variance finiteness is established here.
+SCOPE: stored-data reanalysis only; no Monte Carlo/HPC rerun, no fitted curve, and no claim about total correlation energy.

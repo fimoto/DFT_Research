@@ -1,0 +1,11 @@
+# build products
+src/ks.x
+src/*.mod
+# working directories created by RUNBOOK steps
+work/
+runs/
+# python
+__pycache__/
+*.pyc
+# editor / OS
+.DS_Store

@@ -1,0 +1,3 @@
+numpy==2.3.5
+matplotlib==3.10.8   # the version of production/runtime_lock.json
+# Fig. 3 needs pdflatex with TikZ (TeX Live 2020 or later)

@@ -1,0 +1,3 @@
+order 2 Wick denominator 8 counts {'bare_exchange': 2} coefficients {'bare_exchange': 0.25}
+order 3 Wick denominator 48 counts {'one_chord_decorated': 24} coefficients {'one_chord_decorated': 0.5}
+order 4 Wick denominator 384 counts {'one_chord_decorated': 192, 'both_chords_one_bubble_each': 96} coefficients {'one_chord_decorated': 0.5, 'both_chords_one_bubble_each': 0.25}

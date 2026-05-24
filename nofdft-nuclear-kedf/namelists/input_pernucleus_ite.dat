@@ -1,0 +1,18 @@
+! Per-nucleus density-dependent-kF NL-OFDFT: imaginary-time evolution to the
+! self-consistent OFDFT density from the KS density, with the per-nucleus delta-g.
+! s2_grad=0 for the per-nucleus fits (no spatial-gradient regularization).
+&input
+  run_ks=.false. run_nlf=.false. run_derivative=.false. run_teacher=.false.
+  run_deriv_check=.false. run_ite=.true. run_minimize=.false. run_diagscf=.false.
+  nlf_use_ks_density=.false.
+  external_density_file='ks_Ca40_nr250.dat'
+  A=40 npart_q=20 kernel_mode='dd' kf_const=0.80d0
+  extra_g_file='eg_CHI6_Ca40.dat' c_corr_shift=0.93896d0 s2_grad_in=0.0d0
+  qmax=60.0d0 nq=6000 nmu=24 nr_tab=4001 use_semilocal=.false.
+  ite_method='ITE_2A0' ite_init_mode='file' ite_initial_density_file='ks_Ca40_nr250.dat'
+  ite_max_iter=8000 ite_dt=1.0d-5 ite_tol=0.0d0 ite_monitor_every=20
+  ite_dt_adapt=.true. ite_dt_max=5.0d-5 ite_dt_grow=1.1d0 ite_dt_shrink=0.5d0
+  ite_history_file='ite_Ca40_history.dat'
+  ite_density_file='ite_Ca40_density.dat'
+  ite_summary_file='ite_Ca40_summary.dat'
+/

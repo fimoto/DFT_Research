@@ -1,0 +1,383 @@
+{
+ "figure": "fig_highdensity",
+ "size_inches": [
+  3.4,
+  4.3
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.24433501678666258,
+    0.5423844387022683,
+    0.7115473361545138,
+    0.3800961814527706
+   ],
+   "title": "(a) High-density energy",
+   "xlabel": "",
+   "ylabel": "$e_{2x}-e_{\\rm kite}$ (mRy)",
+   "xscale": "log",
+   "yscale": "log",
+   "xlabel_fontsize": 10.0,
+   "ylabel_fontsize": 10.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.00033884415613920273,
+    1.8620871366628675
+   ],
+   "ylim": [
+    0.04614167706676386,
+    27.388844051103796
+   ],
+   "xticks": [
+    0.001,
+    0.01,
+    0.1,
+    1.0
+   ],
+   "yticks": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "two logarithms $+\\,c_2 r_s$",
+     "file": "ax0_00_line_two_logarithms_c_2_r_s.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#000000ff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#000000ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "two logarithms",
+     "file": "ax0_01_line_two_logarithms.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff0000ff",
+     "linestyle": "--",
+     "linewidth": 1.0,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#ff0000ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax0_02_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.5,
+     "marker": "o",
+     "markersize": 3.5,
+     "markerfacecolor": "#00000000",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax0_03_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "None",
+     "linewidth": 1.5,
+     "marker": "o",
+     "markersize": 3.5,
+     "markerfacecolor": "#1f77b4ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax0_04_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#1f77b4ff"
+     ],
+     "linewidths": [
+      1.5
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax0_05_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#1f77b4ff"
+     ],
+     "linewidths": [
+      1.5
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0
+   },
+   "containers": [
+    {
+     "type": "ErrorbarContainer",
+     "label": "direct evaluation",
+     "data_line_index": 2,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    },
+    {
+     "type": "ErrorbarContainer",
+     "label": "direct, outside the fit range",
+     "data_line_index": 3,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    }
+   ],
+   "legend": {
+    "texts": [
+     "two logarithms $+\\,c_2 r_s$",
+     "two logarithms",
+     "direct evaluation",
+     "direct, outside the fit range"
+    ],
+    "loc": 4
+   },
+   "texts": []
+  },
+  {
+   "index": 1,
+   "position": [
+    0.24433501678666258,
+    0.149483204134367,
+    0.7115473361545138,
+    0.30407694516221645
+   ],
+   "title": "(b) Deviations in statistical-error units",
+   "xlabel": "$r_s$",
+   "ylabel": "(direct $-$ model)/$\\sigma$",
+   "xscale": "log",
+   "yscale": "symlog",
+   "xlabel_fontsize": 10.0,
+   "ylabel_fontsize": 10.0,
+   "title_fontsize": 9.0,
+   "xlim": [
+    0.00033884415613920273,
+    1.8620871366628675
+   ],
+   "ylim": [
+    -1000.0,
+    10.0
+   ],
+   "xticks": [
+    0.001,
+    0.01,
+    0.1,
+    1.0
+   ],
+   "yticks": [
+    -1000.0,
+    -100.0,
+    -10.0,
+    0.0,
+    10.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "_child1",
+     "file": "ax1_00_line_child1.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#000000ff",
+     "linestyle": "-",
+     "linewidth": 0.6,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#000000ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "vs two logarithms",
+     "file": "ax1_01_line_vs_two_logarithms.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#ff0000ff",
+     "linestyle": "--",
+     "linewidth": 1.0,
+     "marker": "s",
+     "markersize": 3.5,
+     "markerfacecolor": "#00000000",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "vs two logarithms $+\\,c_2 r_s$",
+     "file": "ax1_02_line_vs_two_logarithms_c_2_r_s.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#1f77b4ff",
+     "linestyle": "-",
+     "linewidth": 1.0,
+     "marker": "o",
+     "markersize": 3.5,
+     "markerfacecolor": "#00000000",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {
+    "base": 10.0,
+    "linthresh": 5.0,
+    "linscale": 1.0
+   },
+   "legend": {
+    "texts": [
+     "vs two logarithms",
+     "vs two logarithms $+\\,c_2 r_s$"
+    ],
+    "loc": 1
+   },
+   "texts": [],
+   "patches": [
+    {
+     "type": "Rectangle",
+     "file": "ax1_03_patch_Rectangle.csv",
+     "facecolor": "#d9d9d9ff",
+     "edgecolor": "#d9d9d9ff",
+     "linewidth": 0.0,
+     "linestyle": "solid",
+     "alpha": null,
+     "coordinates": "data (converted)"
+    }
+   ]
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "sans-serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 10.0,
+  "axes.labelsize": "medium",
+  "xtick.labelsize": "medium",
+  "ytick.labelsize": "medium",
+  "legend.fontsize": "medium",
+  "lines.linewidth": 1.5,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavusans",
+  "savefig.bbox": null,
+  "savefig.pad_inches": 0.1
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "SPIN",
+ "figure_number": 6,
+ "latex_label": "fig:highdensity",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_highdensity.pdf",
+ "produced_by": "validation/high_density/make_fig_high_density.py"
+}

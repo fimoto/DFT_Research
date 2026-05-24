@@ -1,0 +1,5 @@
+EXACT PASS Eqs.(53),(54) symbolic quotient gives f_x and H; the next coefficient also cancels.
+EXACT PASS Eq.(54) H(0)=H(+1)=H(-1)=0 exactly.
+NUM PASS Eq.(53) all plotted formulas match the direct 70-digit energy quotient.
+NUM PASS Eq.(53) subtracted ratio converges at the predicted first-correction order.
+NUM PASS spin-interpolation CSV: all 501 rows reproduce the analytic plotting functions.

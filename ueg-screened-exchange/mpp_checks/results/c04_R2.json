@@ -1,0 +1,305 @@
+{
+ "script": "c04_R2.py",
+ "title": "closed form of R_2 and the vertex Fermi-surface factor (main Sec. 3.1, SI Sec. S4)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 182.5,
+ "n_checks": 33,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Eq. (S9)",
+   "what": "h_2 + z h_2' = h_2^2 - 2 a^2 r^2/(1+r^2)",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (38)",
+   "what": "the two forms of R_2 agree (difference at z = 0.3, 1, 3 below 1e-40)",
+   "computed": "True",
+   "printed": "True",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.1 (i)",
+   "what": "R_2(0) = 2/pi",
+   "computed": "2/pi",
+   "printed": "2/pi",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.1 (ii), SI Sec. S4",
+   "what": "large-z series 5/(12 pi z^4) - 11/(20 pi z^6) + 1283/(2240 pi z^8), no z^-2 term",
+   "computed": "[0, 5/12, -11/20, 1283/2240]",
+   "printed": "[0, 5/12, -11/20, 1283/2240]",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient difference of 1/|2 sin(phi/2)| for m=1: -(2/pi) O_m",
+   "computed": "-0.6366197723675813430755351",
+   "printed": "-0.6366197723675813430755351",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient difference of 1/|2 sin(phi/2)| for m=2: -(2/pi) O_m",
+   "computed": "-0.8488263631567751241007134",
+   "printed": "-0.8488263631567751241007134",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient difference of 1/|2 sin(phi/2)| for m=3: -(2/pi) O_m",
+   "computed": "-0.9761503176302913927158204",
+   "printed": "-0.9761503176302913927158204",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient difference of 1/|2 sin(phi/2)| for m=5: -(2/pi) O_m",
+   "computed": "-1.137831529660153321115956",
+   "printed": "-1.137831529660153321115956",
+   "deviation": "1.97e-31",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "generating function sum O_m x^m = sqrt(x) artanh(sqrt x)/(1-x) (through x^9)",
+   "computed": "0",
+   "printed": "0",
+   "criterion": "exact equality",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient F_(1,1) of cos(theta) b, z = 0.7 (|difference|)",
+   "computed": "6.118102206084374726850231e-32",
+   "printed": "0.0",
+   "deviation": "6.12e-32",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient F_(1,2) of cos(theta) b, z = 0.7 (|difference|)",
+   "computed": "3.536551777282761488877545e-32",
+   "printed": "0.0",
+   "deviation": "3.54e-32",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "Fourier coefficient F_(1,3) of cos(theta) b, z = 0.7 (|difference|)",
+   "computed": "6.118102441791662907348854e-32",
+   "printed": "0.0",
+   "deviation": "6.12e-32",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.1, SI Sec. S4",
+   "what": "angular quadrature of main Eq. (34) at z=1 vs closed form (38)",
+   "computed": "0.0497708828980702314592412",
+   "printed": "0.04977088289807023145924119",
+   "deviation": "1.29e-26",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "printed quadrature value R_2(1) = 0.04977088289807023 vs closed form",
+   "computed": "1.459e-18",
+   "printed": "within 7e-18",
+   "criterion": "deviation found here <= printed bound 7.0e-18",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.1, SI Sec. S4",
+   "what": "angular quadrature of main Eq. (34) at z=0.3 vs closed form (38)",
+   "computed": "0.3180676468680982141948314",
+   "printed": "0.3180676468680982141948314",
+   "deviation": "6.46e-27",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.1, SI Sec. S4",
+   "what": "angular quadrature of main Eq. (34) at z=3 vs closed form (38)",
+   "computed": "0.001422386002889297879353024",
+   "printed": "0.001422386002889297879353039",
+   "deviation": "1.53e-26",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3 caption",
+   "what": "R_2(0.3)",
+   "computed": "0.3180676468681",
+   "printed": "0.3180676",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Table S3 caption",
+   "what": "R_2(1)",
+   "computed": "0.04977088289807",
+   "printed": "0.0497709",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "slope per unit log(1/eps) of the vertex part, 1e-7 < eps < 1e-5, z=1e-4",
+   "computed": "0.318246224207",
+   "printed": "0.318246",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "pi^-1 (h_2 + z h_2') at z=1e-4",
+   "computed": "0.318246224207",
+   "printed": "0.318246",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "slope per unit log(1/eps) of the vertex part, 1e-7 < eps < 1e-5, z=0.3",
+   "computed": "0.1429307521958",
+   "printed": "0.1429308",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "pi^-1 (h_2 + z h_2') at z=0.3",
+   "computed": "0.1429307521957",
+   "printed": "0.1429308",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "slope per unit log(1/eps) of the vertex part, 1e-7 < eps < 1e-5, z=1",
+   "computed": "-0.01930873237498",
+   "printed": "-0.01930873",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "pi^-1 (h_2 + z h_2') at z=1",
+   "computed": "-0.019308732375124",
+   "printed": "-0.01930873",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=2, N=1",
+   "computed": "0.2146018366025516903843392",
+   "printed": "0.2146018366025516903843392",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=2, N=2",
+   "computed": "0.19174067974354009487069",
+   "printed": "0.19174067974354009487069",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=2, N=3",
+   "computed": "0.1642706617787065168238155",
+   "printed": "0.1642706617787065168238155",
+   "deviation": "2.47e-32",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=3, N=1",
+   "computed": "0.1606677605476985179936591",
+   "printed": "0.1606677605476985179936591",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=3, N=2",
+   "computed": "0.1394340658912020559599043",
+   "printed": "0.1394340658912020559599043",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 3.4, SI Sec. S4",
+   "what": "Int h^N (h + z h') dz = [N/(N+1)] Int h^(N+1) dz, d=3, N=3",
+   "computed": "0.117109981656510659434656",
+   "printed": "0.117109981656510659434656",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-25",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (58)",
+   "what": "(2/(3 pi^2))(10 - 3 pi)",
+   "computed": "0.038854785248",
+   "printed": "0.03885",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 4",
+   "what": "Pi^(1)_vtx in rings, d = 2",
+   "computed": "0.03885478525",
+   "printed": "0.0389",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S4",
+   "what": "d = 3: (12 alpha_L/pi^3)(-1/(8 pi))(pi/3)(1 - log 2) = 3 c_hd",
+   "computed": "-0.002578337156933576048360655",
+   "printed": "-0.002578337156933576048360655",
+   "deviation": "3.85e-34",
+   "criterion": "absolute deviation <= 1.0e-28",
+   "pass": true
+  }
+ ]
+}

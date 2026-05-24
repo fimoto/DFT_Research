@@ -1,0 +1,16 @@
+! NLF (nonlocality function) diagnostic on a converged OFDFT density, dd kernel.
+! IMPORTANT: kernel_mode='dd' selects the density-dependent-kF convolution and
+! nlf_use_ks_density=.false. reads the OFDFT density from external_density_file.
+! With these two keys the NLF postprocessor uses exactly the same kernel table
+! and quadrature as the SCF/ITE density evolution. Omitting nlf_use_ks_density
+! (default .true.) would fall back to the constant-kF postprocessor.
+&input
+  run_ks=.false. run_nlf=.true. run_derivative=.false. run_teacher=.false.
+  run_deriv_check=.false. run_ite=.false. run_minimize=.false. run_diagscf=.false.
+  nlf_use_ks_density=.false.
+  external_density_file='ite_Ca40_density.dat'
+  A=40 npart_q=20 kernel_mode='dd' kf_const=0.80d0
+  extra_g_file='eg_UNI4.dat' c_corr_shift=0.28974d0 s2_grad_in=0.5d0
+  qmax=60.0d0 nq=6000 nmu=48 nr_tab=4001 use_semilocal=.false.
+  nlf_file='nlf_Ca40.dat'
+/

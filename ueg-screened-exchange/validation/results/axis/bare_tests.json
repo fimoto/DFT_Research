@@ -1,0 +1,45 @@
+{
+ "exact_e2x_mry": 48.3583178,
+ "seed": 7,
+ "reps": 16,
+ "order": 24,
+ "nk": 48,
+ "rows": [
+  {
+   "nq": 24,
+   "power": 15,
+   "mean_mry": 47.666,
+   "se_mry": 0.187
+  },
+  {
+   "nq": 24,
+   "power": 17,
+   "mean_mry": 47.953,
+   "se_mry": 0.091
+  },
+  {
+   "nq": 32,
+   "power": 17,
+   "mean_mry": 48.124,
+   "se_mry": 0.101
+  },
+  {
+   "nq": 64,
+   "power": 17,
+   "mean_mry": 48.314,
+   "se_mry": 0.075
+  },
+  {
+   "nq": 96,
+   "power": 15,
+   "mean_mry": 48.095,
+   "se_mry": 0.14
+  },
+  {
+   "nq": 96,
+   "power": 17,
+   "mean_mry": 48.281,
+   "se_mry": 0.083
+  }
+ ]
+}

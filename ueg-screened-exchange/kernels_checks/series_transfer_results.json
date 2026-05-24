@@ -1,0 +1,57 @@
+{
+  "purpose": "coupling identities on finite scalar rational kernels, not UEG data",
+  "tests": [
+    {
+      "r": 0.001,
+      "B_quadrature": 0.9984658572350992,
+      "F_direct": 0.9977017023888575,
+      "C_direct": 0.9954034047777149,
+      "max_absolute_error": 4.440892098500626e-16
+    },
+    {
+      "r": 0.1,
+      "B_quadrature": 0.8876627597711509,
+      "F_direct": 0.8462783171521034,
+      "C_direct": 0.6925566343042069,
+      "max_absolute_error": 7.771561172376096e-16
+    },
+    {
+      "r": 1.0,
+      "B_quadrature": 0.6236356250478279,
+      "F_direct": 0.5551282051282052,
+      "C_direct": 0.11025641025641031,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "r": 10.0,
+      "B_quadrature": 0.2524926693437618,
+      "F_direct": 0.17528011204481792,
+      "C_direct": -0.6494397759103642,
+      "max_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "r": 1000.0,
+      "B_quadrature": 0.00457830884038828,
+      "F_direct": 0.0023256113743605313,
+      "C_direct": -0.9953487772512789,
+      "max_absolute_error": 8.501532811067136e-12
+    }
+  ],
+  "endpoint_moments": [
+    {
+      "p": 0.25,
+      "moment": 1.1428571428571423,
+      "log_moment": -0.6530612244897959
+    },
+    {
+      "p": 0.5,
+      "moment": 1.3333333333333337,
+      "log_moment": -0.8888888888888895
+    },
+    {
+      "p": 0.75,
+      "moment": 1.6000000000000008,
+      "log_moment": -1.2799999999999987
+    }
+  ]
+}

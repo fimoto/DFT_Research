@@ -1,0 +1,68 @@
+{
+  "purpose": "What 'the same result' means in this repository. Agreement is judged on physical quantities at the levels below, not on file contents. Anything inside these bands is the same physics obtained on a different machine, compiler, or independent implementation; anything far outside indicates a substantive difference worth tracking down.",
+  "how_to_use": "Compare your run against PAPER_VALUES.md (or against your own earlier run) entry by entry, and read the difference against the band for that quantity. Bands are absolute unless stated otherwise.",
+  "chain_stages": {
+    "ks_reference_density": {
+      "band": "2e-3 fm^-3 pointwise on rho_species, 0.01 fm on the rms radius",
+      "note": "Different SCF paths and grids reach slightly different converged densities. Our nr=500 to nr=250 resampling agrees with the shipped file to ~1e-9, but that is a property of one machine, not a requirement."
+    },
+    "ks_reference_tau": {
+      "band": "1e-3 relative on tau_KS in the nuclear interior",
+      "note": "This sets the accuracy of the target the fit is asked to reproduce."
+    },
+    "teacher_tables": {
+      "band": "3e-3 relative on the density-dependent-kF kinetic-energy density (column 7)",
+      "note": "Our shipped copies and a fresh regeneration of the same namelists differ by about 1e-3; the band allows for that plus quadrature differences."
+    },
+    "trial_path_densities": {
+      "band": "particle number conserved to 1e-2, density nonnegative everywhere",
+      "note": "The direction matters, not its precise amplitude: any density showing the A=80 instability defines a usable path."
+    },
+    "kernel_fit": {
+      "band": "no numerical band; judge by the fit report (see below)",
+      "note": "Kernel coefficients and the local-correction shift are not observables. Two fits that differ visibly in coefficients can give the same physics; compare the self-consistent results instead."
+    }
+  },
+  "observables": {
+    "central_density_rho_c": {
+      "band": "0.002 fm^-3",
+      "note": "About 1% of a typical nuclear central density. The A=80 shared solution is known to carry a larger genuine sensitivity (several percent) to angular quadrature and to the starting profile; see README."
+    },
+    "rms_radius": {
+      "band": "0.01 fm"
+    },
+    "total_energy": {
+      "band": "0.5 MeV, or 0.05% of the total, whichever is larger",
+      "note": "The nmu=24 to nmu=64 angular-quadrature difference alone is of this order for the heavier systems."
+    },
+    "nlf_distance_d": {
+      "band": "0.005",
+      "note": "Density-weighted L2 distance between the species NLF and the KS reference over the nuclear interior."
+    },
+    "el_residual": {
+      "band": "not compared; report it",
+      "note": "The final Euler-Lagrange residual should be small (below ~0.1 MeV in the per-nucleus family) but its exact value depends on the step-size schedule."
+    },
+    "ite_vs_diagonalization": {
+      "band": "1e-3 relative L2 on the density",
+      "note": "Confirms that a relaxation endpoint is a fixed point of the Euler-Lagrange equation rather than an artifact of the relaxation."
+    },
+    "diagonalization_benchmark_energy": {
+      "band": "1 keV between converged (lambda, alpha) settings on the same density",
+      "note": "Table I: all converged settings must agree on the energy; the iteration counts and auxiliary gaps are implementation details and are not compared."
+    }
+  },
+  "fit_report_targets": {
+    "per_nucleus_fixed_density_distance": "a few times 1e-2 or below",
+    "surface_band_chi_minimum": ">= 5 (soft target of the tail-margin penalty)",
+    "shared_trial_path_energy_change": "positive; the sign is what matters, not the magnitude"
+  },
+  "qualitative_conclusions": [
+    "Per-nucleus fits reproduce the KS density and NLF closely; a single shared kernel does noticeably worse on all four nuclei.",
+    "The shared functional transfers in shape but not in absolute energy: the A=140 holdout is reproduced in NLF structure and radius while overbound by a few percent.",
+    "A shared fit without the energy-rise rows is unstable at A=80; the depleted solution is a genuine fixed point, and neither a gradient term nor a finer angular quadrature repairs it.",
+    "Fitting the pointwise kinetic data alone gives a functional whose self-consistent density drifts away from the KS reference.",
+    "Removing the surface-tail data and the tail-margin penalty lets spurious NLF structure appear in the surface region.",
+    "In the constant-kF benchmark the naive (lambda, alpha) = (1, 1) map fails to converge, while mixing or rearrangement restores convergence to a common energy; the auxiliary-Hamiltonian gap does not by itself explain which settings converge."
+  ]
+}

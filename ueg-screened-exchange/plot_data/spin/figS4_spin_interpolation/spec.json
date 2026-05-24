@@ -1,0 +1,220 @@
+{
+ "figure": "fig_spin_interpolation",
+ "size_inches": [
+  3.4,
+  2.8
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.125,
+    0.10999999999999999,
+    0.775,
+    0.77
+   ],
+   "title": "",
+   "xlabel": "Spin polarization $\\zeta$",
+   "ylabel": "$q_*[f_{\\rm kite}^{(3)}-f_x]$",
+   "xscale": "linear",
+   "yscale": "linear",
+   "xlabel_fontsize": 8.5,
+   "ylabel_fontsize": 8.5,
+   "title_fontsize": 10.2,
+   "xlim": [
+    0.0,
+    1.0
+   ],
+   "ylim": [
+    -0.3567169632421212,
+    0.01698652205914863
+   ],
+   "xticks": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0
+   ],
+   "yticks": [
+    -0.4,
+    -0.35000000000000003,
+    -0.30000000000000004,
+    -0.25,
+    -0.2,
+    -0.15000000000000002,
+    -0.09999999999999998,
+    -0.04999999999999999,
+    0.0,
+    0.04999999999999999
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "$r_s=10^4$",
+     "file": "ax0_00_line_r_s_10_4.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#0072b2ff",
+     "linestyle": "-",
+     "linewidth": 1.5,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#0072b2ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^6$",
+     "file": "ax0_01_line_r_s_10_6.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d55e00ff",
+     "linestyle": "-",
+     "linewidth": 1.5,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d55e00ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$r_s=10^8$",
+     "file": "ax0_02_line_r_s_10_8.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#009e73ff",
+     "linestyle": "-",
+     "linewidth": 1.5,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#009e73ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "$H(\\zeta)$, limiting curve",
+     "file": "ax0_03_line_H_zeta_limiting_curve.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#000000ff",
+     "linestyle": "--",
+     "linewidth": 1.4,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#000000ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child4",
+     "file": "ax0_04_line_child4.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#bfbfbfff",
+     "linestyle": "-",
+     "linewidth": 0.5,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#bfbfbfff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 0,
+     "visible": true,
+     "clip_on": true
+    }
+   ],
+   "xscale_kwargs": {},
+   "yscale_kwargs": {},
+   "legend": {
+    "texts": [
+     "$r_s=10^4$",
+     "$r_s=10^6$",
+     "$r_s=10^8$",
+     "$H(\\zeta)$, limiting curve"
+    ],
+    "loc": 3
+   },
+   "texts": []
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 8.5,
+  "axes.labelsize": "medium",
+  "xtick.labelsize": "medium",
+  "ytick.labelsize": "medium",
+  "legend.fontsize": "medium",
+  "lines.linewidth": 1.5,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavuserif",
+  "savefig.bbox": null,
+  "savefig.pad_inches": 0.1
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "SPIN",
+ "figure_number": "S4",
+ "latex_label": "fig:spin-interpolation",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_spin_interpolation.pdf",
+ "produced_by": "figs/make_spin_interpolation.py"
+}

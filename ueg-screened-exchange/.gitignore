@@ -1,0 +1,129 @@
+# Allowlist: ignore everything, then admit only what is needed to reproduce
+# the spin paper and the Mellin-pole paper, with their supplementary material, and the record of the earlier kernels manuscript. Files added later stay private unless
+# admitted here.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/CITATION.cff
+!/pyproject.toml
+!/requirements.txt
+!/requirements-spin.txt
+!/REPRODUCE_SPIN.md
+!/LIMITATIONS.md
+!/release_manifest.json
+
+# Core library and the three implementations
+!/src/
+!/external/
+!/production/
+!/independent_audit/
+/independent_audit/*.html
+/independent_audit/validation_summary.json
+
+# Analytic checks, Estimator B, generated tables
+!/spin/
+/spin/build_coverage_ledger.py
+/spin/build_equation_map.py
+/spin/verify_analytic_coverage.py
+/spin/ANALYTIC_COVERAGE.md
+/spin/analytic_coverage.json
+/spin/coverage_policy.json
+/spin/validation_summary.json
+/spin/*.html
+
+# Revision-stage validation runs (SM S7-S11)
+!/validation/
+/validation/run_grid30.py
+/validation/results/grid30.json
+/validation/results/directA_rs30.json
+/validation/results/*.tex
+/validation/results/*.log
+/validation/patches/README_patches_ja.md
+
+# Input data, spin-paper figures and the data behind every plotted curve
+!/data/
+!/figs/
+/figs/*
+!/figs/data/
+!/figs/dataout.py
+!/figs/make_matching_fig.py
+!/figs/make_map_figs.py
+!/figs/make_shell_fig.py
+!/figs/make_spin_bias.py
+!/figs/make_spin_interpolation.py
+!/figs/fig_lowdensity.pdf
+!/figs/fig_map.pdf
+!/figs/fig_matching.pdf
+!/figs/fig_residuals.pdf
+!/figs/fig_shell.pdf
+!/figs/fig_spin_bias.pdf
+!/figs/fig_spin_interpolation.pdf
+!/figs/fig_highdensity.pdf
+# figures of the earlier kernels manuscript (SM Figs. S1-S4) and the grids behind them
+!/figs/make_phi_fig.py
+!/figs/make_xc_fig.py
+!/figs/make_lorentzian_figs.py
+!/figs/phi_grid.npy
+!/figs/phi_grid_corrected.npy
+!/figs/phi_recomputed_y_lt_4.json
+!/figs/phi_recomputed_y_gt_60.json
+!/figs/phi_fig1_range_recomputed.json
+!/figs/phi_grid_point_checks.csv
+!/figs/xc_grid.npy
+!/figs/fig_Phi.pdf
+!/figs/fig_Slambda.pdf
+!/figs/fig_dispersion.pdf
+!/figs/fig_xckernel.pdf
+!/plot_data/
+/plot_data/*
+!/plot_data/spin/
+!/plot_data/kernels/
+
+# Checks of the earlier kernels manuscript (SM Sec. S4, partly used by the Mellin-pole paper) and its reviewer notebook
+!/kernels_checks/
+!/kernels_review/
+/kernels_review/*
+!/kernels_review/README.md
+!/kernels_review/kernels_reviewer_verification.ipynb
+!/kernels_review/execute_notebook.py
+!/kernels_review/requirements.txt
+!/kernels_review/requirements-tested.txt
+!/kernels_review/equation_map.json
+!/kernels_review/mathematica/
+
+# Analytic checks, the Phi and X_c grid pipeline, and Monte Carlo diagnostics
+!/scripts/
+/scripts/refresh_manuscript_linkage.py
+/scripts/verify_notation_regression.py
+/scripts/verify_tex_code_formulas.py
+/scripts/test_tex_code_formulas_mutations.py
+/scripts/tex_code_formulas*.json
+/scripts/export_plot_data.py
+
+# Mellin-pole paper: numerical checks, figure data, figure scripts and the Wolfram Language notebook
+!/mpp_checks/
+!/mpp_review/
+!/mpp_figures/
+
+# External check of two coefficient integrals (requires pySecDec)
+!/pysecdec_check/
+
+# Tests
+!/tests/
+
+# Never publish, wherever they appear
+__pycache__/
+*.pyc
+*.orig
+.venv/
+build/
+*.aux
+*.log
+*.out
+*.blg
+*.fls
+*.fdb_latexmk
+.ipynb_checkpoints/

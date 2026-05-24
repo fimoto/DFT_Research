@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ueg-exchange"
+version = "0.2.0"
+description = "Analysis of the RPA-screened second-order exchange (kite) diagram of the uniform electron gas"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Fumihiro Imoto" }]
+keywords = ["uniform electron gas", "RPA", "second-order exchange", "asymptotics"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=2.0", "scipy>=1.10"]
+
+[project.optional-dependencies]
+highprec = ["mpmath>=1.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

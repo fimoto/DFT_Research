@@ -1,0 +1,10 @@
+# Nonlocal-kernel NL-OFDFT functional-derivative summary
+N_species                 4.000000000000001E+01
+T_vW_species_MeV          1.419488977250056E+02
+T_KEDFnl_species_MeV       6.954589301025953E+02
+E_grad_species_MeV         0.000000000000000E+00
+T_SL_fit_species_MeV       0.000000000000000E+00
+E_SkP_total_MeV           -2.289058349908448E+03
+E_total_NeqZ_MeV          -8.981404897032576E+02
+mu_est_MeV               -1.567627328709012E+01
+residual_phi_L2           5.312761326263866E+00

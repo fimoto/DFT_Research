@@ -1,0 +1,212 @@
+{
+ "script": "c12_static_dassarma.py",
+ "title": "static finite-q comparison with Das Sarma (SI Sec. S6)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 3632.4,
+ "n_checks": 16,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Sec. S6",
+   "what": "x=0.1: nt=8 sequence 4.527974e-04, 4.526583e-04, 4.526140e-04, p = 2.27; (800,16) 4.526070e-04, (800,24) 4.525799e-04",
+   "computed": "estimate 4.523440e-04 +- 5.3e-08",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.1 (units of 0.0001), tip-adapted quadrature, extrapolated",
+   "computed": "4.52343976",
+   "printed": "4.523",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.1 vs Table I of Das Sarma, within one unit of the fourth digit",
+   "computed": "4.523439759768542067774888",
+   "printed": "4.524",
+   "deviation": "0.00056",
+   "criterion": "absolute deviation <= 0.0015",
+   "pass": true
+  },
+  {
+   "where": "record: SI Sec. S6 of v4.20",
+   "what": "earlier crescent code (panels split at +-pi/2), nphi = 400, nt = 10, x=0.1 (units of 0.0001)",
+   "computed": "4.45458945",
+   "printed": "4.454",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "x=0.2: nt=8 sequence 2.104702e-03, 2.104580e-03, 2.104538e-03, p = 2.03; (800,16) 2.104111e-03, (800,24) 2.104030e-03",
+   "computed": "estimate 2.103800e-03 +- 6.6e-08",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.2 (units of 0.001), tip-adapted quadrature, extrapolated",
+   "computed": "2.10379996",
+   "printed": "2.104",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.2 vs Table I of Das Sarma, within one unit of the fourth digit",
+   "computed": "2.103799958260255120734428",
+   "printed": "2.104",
+   "deviation": "0.0002",
+   "criterion": "absolute deviation <= 0.0015",
+   "pass": true
+  },
+  {
+   "where": "record: SI Sec. S6 of v4.20",
+   "what": "earlier crescent code (panels split at +-pi/2), nphi = 400, nt = 10, x=0.2 (units of 0.001)",
+   "computed": "2.02050487",
+   "printed": "2.020",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "x=0.3: nt=8 sequence 5.142693e-03, 5.142571e-03, 5.142529e-03, p = 2.00; (800,16) 5.141464e-03, (800,24) 5.141309e-03",
+   "computed": "estimate 5.141067e-03 +- 7.7e-08",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.3 (units of 0.001), tip-adapted quadrature, extrapolated",
+   "computed": "5.14106737",
+   "printed": "5.141",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.3 vs Table I of Das Sarma, within one unit of the fourth digit",
+   "computed": "5.141067368419822258829299",
+   "printed": "5.141",
+   "deviation": "6.74e-5",
+   "criterion": "absolute deviation <= 0.0015",
+   "pass": true
+  },
+  {
+   "where": "record: SI Sec. S6 of v4.20",
+   "what": "earlier crescent code (panels split at +-pi/2), nphi = 400, nt = 10, x=0.3 (units of 0.001)",
+   "computed": "5.09633445",
+   "printed": "5.096",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "x=0.4: nt=8 sequence 9.702065e-03, 9.701941e-03, 9.701898e-03, p = 2.00; (800,16) 9.699938e-03, (800,24) 9.699681e-03",
+   "computed": "estimate 9.699424e-03 +- 9.1e-08",
+   "printed": null,
+   "criterion": "informational",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.4 (units of 0.001), tip-adapted quadrature, extrapolated",
+   "computed": "9.69942431",
+   "printed": "9.699",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S6",
+   "what": "Delta R/R(0) at x=0.4 vs Table I of Das Sarma, within one unit of the fourth digit",
+   "computed": "9.699424305473435481417255",
+   "printed": "9.699",
+   "deviation": "0.000424",
+   "criterion": "absolute deviation <= 0.0015",
+   "pass": true
+  },
+  {
+   "where": "record: SI Sec. S6 of v4.20",
+   "what": "earlier crescent code (panels split at +-pi/2), nphi = 400, nt = 10, x=0.4 (units of 0.001)",
+   "computed": "9.6256605",
+   "printed": "9.625",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "truncated",
+   "pass": true
+  }
+ ],
+ "values": {
+  "0.1": {
+   "nt8": {
+    "800": 0.00045279736705271207,
+    "1200": 0.0004526582569452992,
+    "1600": 0.0004526140481295989
+   },
+   "p": 2.2674982034063063,
+   "phi_tail": 4.805372279080044e-08,
+   "v800_16": 0.00045260697561384366,
+   "v800_24": 0.00045257985395398374,
+   "nt_tail": -4.505331225556765e-09,
+   "estimate": 0.0004523439759768542,
+   "uncertainty": 5.2559054016357204e-08
+  },
+  "0.2": {
+   "nt8": {
+    "800": 0.00210470229411151,
+    "1200": 0.002104580120457162,
+    "1600": 0.0021045378781388664
+   },
+   "p": 2.0338789290513173,
+   "phi_tail": 5.312233890536904e-08,
+   "v800_16": 0.002104110763293724,
+   "v800_24": 0.002104030199131193,
+   "nt_tail": -1.2702559389250482e-08,
+   "estimate": 0.002103799958260255,
+   "uncertainty": 6.582489829461952e-08
+  },
+  "0.3": {
+   "nt8": {
+    "800": 0.005142692755062622,
+    "1200": 0.0051425710920984915,
+    "1600": 0.0051425285720150685
+   },
+   "p": 2.004044723686958,
+   "phi_tail": 5.452358094039579e-08,
+   "v800_16": 0.0051414644365227365,
+   "v800_24": 0.005141308690579377,
+   "nt_tail": -2.2615531061843895e-08,
+   "estimate": 0.0051410673684198225,
+   "uncertainty": 7.713911200223968e-08
+  },
+  "0.4": {
+   "nt8": {
+    "800": 0.009702064629296207,
+    "1200": 0.00970194146984396,
+    "1600": 0.009701898352923979
+   },
+   "p": 1.9992839608559207,
+   "phi_tail": 5.5462150973820305e-08,
+   "v800_16": 0.009699937901221443,
+   "v800_24": 0.009699681263196758,
+   "nt_tail": -3.521920011918817e-08,
+   "estimate": 0.009699424305473436,
+   "uncertainty": 9.068135109300847e-08
+  }
+ }
+}

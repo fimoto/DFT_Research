@@ -1,0 +1,13 @@
+! Base-kernel reference tables (teacher_ddkf_O16.dat) on the nr=500 KS
+! density: constant-kF and density-dependent-kF tau/NLF of the BASE kernel
+! (no delta-g). Input density: ks_O16_species.dat from namelists/ks/.
+&input
+ run_ks=.false., run_nlf=.false., run_derivative=.false., run_teacher=.true.,
+ run_deriv_check=.false., run_ite=.false., run_minimize=.false., run_diagscf=.false.,
+ nlf_use_ks_density=.false., density_scale=1.0d0, external_density_file='ks_O16_species.dat',
+ A=16, npart_q=8, kernel_mode='dd', kf_const=0.80d0,
+ qmax=60.0d0, nq=6000, nmu=64, nr_tab=4001,
+ teacher_xqmax=80.0d0, teacher_ny_gtab=8001,
+ use_semilocal=.false.,
+ teacher_file='teacher_ddkf_O16.dat'
+/

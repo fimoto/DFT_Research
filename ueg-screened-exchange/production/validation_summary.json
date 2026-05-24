@@ -1,0 +1,28 @@
+{
+  "release": "2026-09-28 MBPT notation revision",
+  "raw_record_files": 134,
+  "raw_records_and_reference_lock_preserved": true,
+  "full_134_record_fresh_reintegration": false,
+  "plot_and_table_regeneration": "PASS: exact bytes against reviewed product_lock.json",
+  "validation_log": "audit/notation_revision/production_verify.log",
+  "notebook_execution_record": "audit/notation_revision/notebook_execution_summary.json",
+  "notebook_main_checks_passed": 284,
+  "notebook_additional_groups": {
+    "32": 5,
+    "33": 9,
+    "34": 8
+  },
+  "source_compatibility_register": "production/source_compatibility.json",
+  "separate_manuscript_linkage": "PASS; audit/notation_revision/source_verification.json",
+  "pdf_pages": 20,
+  "supplement_pdf_pages": 11,
+  "derivation_pdf_pages": 69,
+  "remote_ci_executed": false,
+  "figure_revision_20260929": {
+    "status": "PASS",
+    "details": "../audit/figure_revision_20260929/verification.json",
+    "raw_records_unchanged": 134,
+    "fresh_full_reintegration": false,
+    "fresh_full_notebook_execution": false
+  }
+}

@@ -1,0 +1,16 @@
+! Exact production input: per-nucleus/A80, stage 2/3 (energy and derivative evaluation)
+! Use an isolated case directory; ks.x always reads input_ks_nlf.dat.
+! Requires: ite_density.dat and kernel.dat. Writes: energy.dat.
+! Source paths and constants: production_inputs/cases.tsv
+&input
+ run_ks=.false., run_nlf=.false., run_derivative=.true., run_teacher=.false.,
+ run_deriv_check=.false., run_ite=.false., run_minimize=.false., run_diagscf=.false.,
+ nlf_use_ks_density=.false., density_scale=1.0d0, external_density_file='ite_density.dat',
+ A=80, npart_q=40, kernel_mode='dd', kf_const=0.80d0,
+ extra_kernel_file='', extra_g_file='kernel.dat', c_corr_shift=0.080039d0, s2_grad_in=0.0d0,
+ qmax=60.0d0, nq=6000, nmu=64, nr_tab=4001,
+ dd_xqmax_in=80.0d0, dd_ny_base_in=8001, dd_kf_scale_in=1.0d0,
+ kernel_lambda=1.0d0, use_semilocal=.false.,
+ derivative_energy_file='energy.dat', derivative_file='derivative_radial.dat',
+ derivative_kernel_file='derivative_kernel.dat'
+/

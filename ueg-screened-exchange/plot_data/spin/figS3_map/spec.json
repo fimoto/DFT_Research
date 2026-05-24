@@ -1,0 +1,858 @@
+{
+ "figure": "fig_map",
+ "size_inches": [
+  7.4,
+  3.25
+ ],
+ "axes": [
+  {
+   "index": 0,
+   "position": [
+    0.08609234234234234,
+    0.1709401709401709,
+    0.2879523462484348,
+    0.7294017094017096
+   ],
+   "title": "(a) Kite energy",
+   "xlabel": "$r_s$",
+   "ylabel": "Spin polarization $\\zeta$",
+   "xscale": "log",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 10.0,
+   "xlim": [
+    1.0,
+    1300.0
+   ],
+   "ylim": [
+    0.0,
+    1.0
+   ],
+   "xticks": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0,
+    100000.0
+   ],
+   "yticks": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "_child7",
+     "file": "ax0_00_line_child7.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#262626ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": ".",
+     "markersize": 1.8,
+     "markerfacecolor": "#262626ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": 0.55,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": false
+    },
+    {
+     "kind": "mesh_nodes",
+     "label": "_child0",
+     "file": "ax0_01_mesh_nodes_child0.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "shape": [
+      400,
+      300
+     ]
+    },
+    {
+     "kind": "mesh_values",
+     "label": "_child0",
+     "file": "ax0_02_mesh_values_child0.csv",
+     "columns": [
+      "row",
+      "col",
+      "value"
+     ],
+     "cmap": "RdBu_r",
+     "clim": [
+      -36.10890486370777,
+      36.10890486370777
+     ],
+     "cells": [
+      400,
+      300
+     ]
+    },
+    {
+     "kind": "contour_lines",
+     "label": "_nolegend_",
+     "file": "ax0_03_contour_lines_nolegend.csv",
+     "columns": [
+      "level_index",
+      "level",
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "levels": [
+      -20.0,
+      -10.0,
+      0.0,
+      10.0,
+      20.0
+     ],
+     "colors": [
+      "#000000ff",
+      "#000000ff",
+      "#000000ff",
+      "#000000ff",
+      "#000000ff"
+     ],
+     "linewidths": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "linestyles": [
+      "(np.float64(0.0), [np.float64(1.85), np.float64(0.8)])",
+      "(np.float64(0.0), [np.float64(1.85), np.float64(0.8)])",
+      "(np.float64(0.0), None)",
+      "(np.float64(0.0), None)",
+      "(np.float64(0.0), None)"
+     ],
+     "cmap": "from_list",
+     "clim": [
+      -20.0,
+      20.0
+     ]
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {},
+   "contour_labels": [
+    {
+     "text": "-20",
+     "x": 103.12537386967165,
+     "y": 0.8060200668896321,
+     "fontsize": 7.0,
+     "rotation": 84.14663192645821
+    },
+    {
+     "text": "-10",
+     "x": 17.238716541066367,
+     "y": 0.09364548494983277,
+     "fontsize": 7.0,
+     "rotation": 89.85986382896806
+    },
+    {
+     "text": "0",
+     "x": 19.5441988859277,
+     "y": 0.9866220735785952,
+     "fontsize": 7.0,
+     "rotation": 88.61888965900039
+    },
+    {
+     "text": "10",
+     "x": 4.029093065085249,
+     "y": 0.17391304347826084,
+     "fontsize": 7.0,
+     "rotation": 89.95723117977172
+    },
+    {
+     "text": "20",
+     "x": 1.9080024683997863,
+     "y": 0.03344481605351171,
+     "fontsize": 7.0,
+     "rotation": 89.99647111934397
+    }
+   ],
+   "texts": [
+    {
+     "text": "-20",
+     "x": 103.12537386967165,
+     "y": 0.8060200668896321,
+     "coordinates": "data",
+     "fontsize": 7.0,
+     "ha": "center",
+     "va": "center",
+     "color": "#000000ff",
+     "rotation": 84.14663192645821
+    },
+    {
+     "text": "-10",
+     "x": 17.238716541066367,
+     "y": 0.09364548494983277,
+     "coordinates": "data",
+     "fontsize": 7.0,
+     "ha": "center",
+     "va": "center",
+     "color": "#000000ff",
+     "rotation": 89.85986382896806
+    },
+    {
+     "text": "0",
+     "x": 19.5441988859277,
+     "y": 0.9866220735785952,
+     "coordinates": "data",
+     "fontsize": 7.0,
+     "ha": "center",
+     "va": "center",
+     "color": "#000000ff",
+     "rotation": 88.61888965900039
+    },
+    {
+     "text": "10",
+     "x": 4.029093065085249,
+     "y": 0.17391304347826084,
+     "coordinates": "data",
+     "fontsize": 7.0,
+     "ha": "center",
+     "va": "center",
+     "color": "#000000ff",
+     "rotation": 89.95723117977172
+    },
+    {
+     "text": "20",
+     "x": 1.9080024683997863,
+     "y": 0.03344481605351171,
+     "coordinates": "data",
+     "fontsize": 7.0,
+     "ha": "center",
+     "va": "center",
+     "color": "#000000ff",
+     "rotation": 89.99647111934397
+    }
+   ]
+  },
+  {
+   "index": 1,
+   "position": [
+    0.5817082606677186,
+    0.1709401709401709,
+    0.39897011829602413,
+    0.7294017094017096
+   ],
+   "title": "(b) Polarization energy from the kite",
+   "xlabel": "$r_s$",
+   "ylabel": "$\\Delta e_{\\rm kite}=e_{\\rm kite}(r_s,\\zeta)-e_{\\rm kite}(r_s,0)$ (mRy)",
+   "xscale": "log",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 9.0,
+   "title_fontsize": 10.0,
+   "xlim": [
+    1.0,
+    1300.0
+   ],
+   "ylim": [
+    -5.0,
+    15.0
+   ],
+   "xticks": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0,
+    100000.0
+   ],
+   "yticks": [
+    -5.0,
+    -2.5,
+    0.0,
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5,
+    15.0
+   ],
+   "is_colorbar": false,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "line",
+     "label": "_child0",
+     "file": "ax1_00_line_child0.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#0072b2ff",
+     "linestyle": "-",
+     "linewidth": 1.1,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#0072b2ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_01_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#0072b2ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "s",
+     "markersize": 3.5,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_02_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#0072b2ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#0072b2ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_03_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#0072b2ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#0072b2ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child5",
+     "file": "ax1_04_line_child5.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d55e00ff",
+     "linestyle": "--",
+     "linewidth": 1.1,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#d55e00ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_05_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d55e00ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "o",
+     "markersize": 3.5,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_06_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d55e00ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#d55e00ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_07_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#d55e00ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#d55e00ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child10",
+     "file": "ax1_08_line_child10.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#009e73ff",
+     "linestyle": "-.",
+     "linewidth": 1.1,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#009e73ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_09_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#009e73ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "^",
+     "markersize": 3.5,
+     "markerfacecolor": "#ffffffff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2.1,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_10_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#009e73ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#009e73ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_nolegend_",
+     "file": "ax1_11_line_nolegend.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#009e73ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "_",
+     "markersize": 3.4,
+     "markerfacecolor": "#009e73ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child15",
+     "file": "ax1_12_line_child15.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "x axes fraction, y data",
+     "color": "#595959ff",
+     "linestyle": "-",
+     "linewidth": 0.8,
+     "marker": "None",
+     "markersize": 6.0,
+     "markerfacecolor": "#595959ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 2,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "line",
+     "label": "_child16",
+     "file": "ax1_13_line_child16.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "color": "#000000ff",
+     "linestyle": "None",
+     "linewidth": 1.1,
+     "marker": "*",
+     "markersize": 7.0,
+     "markerfacecolor": "#000000ff",
+     "markevery": "None",
+     "drawstyle": "default",
+     "alpha": null,
+     "zorder": 5,
+     "visible": true,
+     "clip_on": true
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax1_14_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#0072b2ff"
+     ],
+     "linewidths": [
+      0.8
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax1_15_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#d55e00ff"
+     ],
+     "linewidths": [
+      0.8
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "segments",
+     "label": "_nolegend_",
+     "file": "ax1_16_segments_nolegend.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#009e73ff"
+     ],
+     "linewidths": [
+      0.8
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    }
+   ],
+   "xscale_kwargs": {
+    "base": 10.0
+   },
+   "yscale_kwargs": {},
+   "containers": [
+    {
+     "type": "ErrorbarContainer",
+     "label": "$\\zeta=0.4$",
+     "data_line_index": 1,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    },
+    {
+     "type": "ErrorbarContainer",
+     "label": "$\\zeta=0.8$",
+     "data_line_index": 5,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    },
+    {
+     "type": "ErrorbarContainer",
+     "label": "$\\zeta=1$",
+     "data_line_index": 9,
+     "note": "the error-bar segments of this container are the 'segments' elements drawn with it"
+    }
+   ],
+   "legend": {
+    "texts": [
+     "$\\zeta=0.4$",
+     "$\\zeta=0.8$",
+     "$\\zeta=1$"
+    ],
+    "loc": 1
+   },
+   "texts": [
+    {
+     "text": "$\\zeta=1$: $r_s\\simeq464$",
+     "x": 22.0,
+     "y": -3.8,
+     "coordinates": "data",
+     "fontsize": 8.0,
+     "ha": "left",
+     "va": "baseline",
+     "color": "#000000ff",
+     "rotation": 0.0,
+     "arrow_to": [
+      464.2559305171527,
+      0.0
+     ],
+     "arrow_coordinates": "data"
+    }
+   ]
+  },
+  {
+   "index": 2,
+   "position": [
+    0.3809832993437514,
+    0.1709401709401709,
+    0.052039580647307515,
+    0.7294017094017096
+   ],
+   "title": "",
+   "xlabel": "",
+   "ylabel": "$e_{\\rm kite}$ (mRy per electron)",
+   "xscale": "linear",
+   "yscale": "linear",
+   "xlabel_fontsize": 9.0,
+   "ylabel_fontsize": 8.0,
+   "title_fontsize": 10.799999999999999,
+   "xlim": [
+    0.0,
+    1.0
+   ],
+   "ylim": [
+    -36.10890486370777,
+    36.10890486370777
+   ],
+   "xticks": [],
+   "yticks": [
+    -40.0,
+    -30.0,
+    -20.0,
+    -10.0,
+    0.0,
+    10.0,
+    20.0,
+    30.0,
+    40.0
+   ],
+   "is_colorbar": true,
+   "axis_visible": true,
+   "elements": [
+    {
+     "kind": "segments",
+     "label": "_child0",
+     "file": "ax2_00_segments_child0.csv",
+     "columns": [
+      "segment",
+      "x",
+      "y"
+     ],
+     "coordinates": "data",
+     "colors": [
+      "#000000ff"
+     ],
+     "linewidths": [
+      0.35
+     ],
+     "note": "error bars and contour lines are drawn as segments"
+    },
+    {
+     "kind": "mesh_nodes",
+     "label": "_child1",
+     "file": "ax2_01_mesh_nodes_child1.csv",
+     "columns": [
+      "x",
+      "y"
+     ],
+     "shape": [
+      257,
+      2
+     ]
+    },
+    {
+     "kind": "mesh_values",
+     "label": "_child1",
+     "file": "ax2_02_mesh_values_child1.csv",
+     "columns": [
+      "row",
+      "col",
+      "value"
+     ],
+     "cmap": "RdBu_r",
+     "clim": [
+      -36.10890486370777,
+      36.10890486370777
+     ],
+     "cells": [
+      256,
+      1
+     ]
+    }
+   ],
+   "xscale_kwargs": {},
+   "yscale_kwargs": {},
+   "colorbar": {
+    "cmap": "RdBu_r",
+    "clim": [
+     -36.10890486370777,
+     36.10890486370777
+    ],
+    "label": "$e_{\\rm kite}$ (mRy per electron)",
+    "orientation": "vertical",
+    "mappable_axes": 0
+   },
+   "texts": []
+  }
+ ],
+ "rc": {
+  "text.usetex": false,
+  "font.family": [
+   "sans-serif"
+  ],
+  "font.serif": [
+   "DejaVu Serif",
+   "Bitstream Vera Serif",
+   "Computer Modern Roman",
+   "New Century Schoolbook",
+   "Century Schoolbook L",
+   "Utopia",
+   "ITC Bookman",
+   "Bookman",
+   "Nimbus Roman No9 L",
+   "Times New Roman",
+   "Times",
+   "Palatino",
+   "Charter",
+   "serif"
+  ],
+  "font.size": 9.0,
+  "axes.labelsize": 9.0,
+  "xtick.labelsize": "medium",
+  "ytick.labelsize": "medium",
+  "legend.fontsize": 7.5,
+  "lines.linewidth": 1.1,
+  "lines.markersize": 6.0,
+  "mathtext.fontset": "dejavusans",
+  "savefig.bbox": null,
+  "savefig.pad_inches": 0.1
+ },
+ "figure_legends": [],
+ "suptitle": "",
+ "paper": "SPIN",
+ "figure_number": "S3",
+ "latex_label": "fig:map",
+ "current_manuscript": true,
+ "published_pdf": "figs/fig_map.pdf",
+ "produced_by": "production/render.py"
+}

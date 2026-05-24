@@ -1,0 +1,432 @@
+{
+ "script": "c02_ring_d.py",
+ "title": "ring series in d dimensions (main Sec. 2.8, Table 2, SI Sec. S2)",
+ "manuscript": "MPP v4.21 (submitted version): main text Eqs. (1)-(59), SI Eqs. (S1)-(S104)",
+ "python": "3.13.16",
+ "numpy": "2.3.5",
+ "scipy": "1.17.0",
+ "mpmath": "1.3.0",
+ "seconds": 20.3,
+ "n_checks": 43,
+ "n_fail": 0,
+ "checks": [
+  {
+   "where": "SI Eq. (S5)",
+   "what": "scale-free ring integral at d=4.0, h=0.37",
+   "computed": "-0.1383520005763017565615998",
+   "printed": "-0.138352000576301756561604",
+   "deviation": "4.15e-24",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S5)",
+   "what": "scale-free ring integral at d=5.5, h=0.37",
+   "computed": "-0.116728374093575762978105",
+   "printed": "-0.116728374093575762978105",
+   "deviation": "2.94e-39",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "SI Eq. (S5)",
+   "what": "scale-free ring integral at d=9.0, h=0.37",
+   "computed": "-0.1282085609627560383252479",
+   "printed": "-0.1282085609627560383252479",
+   "deviation": "2.99e-42",
+   "criterion": "absolute deviation <= 1.0e-20",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (30)",
+   "what": "(3/pi^3) Int h^2 dz = 2(1 - log 2)/pi^2",
+   "computed": "0.06218138173930979006988173",
+   "printed": "0.06218138173930979006988173",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-35",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (30)",
+   "what": "Gell-Mann--Brueckner coefficient A",
+   "computed": "0.062181381739",
+   "printed": "0.06218",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (31)",
+   "what": "Rajagopal--Kimball coefficient -2 sqrt2 (10/(3 pi) - 1)",
+   "computed": "-0.1726272624441634675806199",
+   "printed": "-0.1726272624441634675806199",
+   "deviation": "1.15e-41",
+   "criterion": "absolute deviation <= 1.0e-35",
+   "pass": true
+  },
+  {
+   "where": "main Eq. (2)",
+   "what": "a_l",
+   "computed": "-0.17262726244",
+   "printed": "-0.17263",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.8 (i)",
+   "what": "A_4 from Eq. (32) equals -24 2^(5/12)/(91 sqrt3)",
+   "computed": "-0.2032536657046444325587512",
+   "printed": "-0.2032536657046444325587512",
+   "deviation": "8.61e-42",
+   "criterion": "absolute deviation <= 1.0e-30",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_4 (Ry)",
+   "computed": "-0.2032536657",
+   "printed": "-0.20325",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=4, converted to Ry",
+   "computed": "-0.0392",
+   "printed": "-0.0392",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=4",
+   "computed": "5.1850425",
+   "printed": "5.19",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_5 (Ry)",
+   "computed": "-0.17974971394",
+   "printed": "-0.17975",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=5, converted to Ry",
+   "computed": "-0.057",
+   "printed": "-0.0570",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=5",
+   "computed": "3.1535038",
+   "printed": "3.15",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_6 (Ry)",
+   "computed": "-0.19753113469",
+   "printed": "-0.19753",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=6, converted to Ry",
+   "computed": "-0.0782",
+   "printed": "-0.0782",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=6",
+   "computed": "2.5259736",
+   "printed": "2.53",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_7 (Ry)",
+   "computed": "-0.22708734152",
+   "printed": "-0.22709",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=7, converted to Ry",
+   "computed": "-0.1018",
+   "printed": "-0.1018",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=7",
+   "computed": "2.2307204",
+   "printed": "2.23",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_8 (Ry)",
+   "computed": "-0.2623827324",
+   "printed": "-0.26238",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=8, converted to Ry",
+   "computed": "-0.1276",
+   "printed": "-0.1276",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=8",
+   "computed": "2.056291",
+   "printed": "2.06",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "A_9 (Ry)",
+   "computed": "-0.30123369206",
+   "printed": "-0.30123",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "Table I of Schlesier et al. for d=9, converted to Ry",
+   "computed": "-0.1546",
+   "printed": "-0.1546",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Table 2",
+   "what": "ratio for d=9",
+   "computed": "1.9484715",
+   "printed": "1.95",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "(d-3) A_d/2 at d=3.1",
+   "computed": "-0.06393901191232",
+   "printed": "-0.0639390",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "(d-3) A_d/2 at d=3.01",
+   "computed": "-0.06232573772008",
+   "printed": "-0.0623257",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "(d-3) A_d/2 at d=3.001",
+   "computed": "-0.06219548198531",
+   "printed": "-0.0621955",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "-A = -2(1 - log 2)/pi^2",
+   "computed": "-0.06218138173931",
+   "printed": "-0.0621814",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "A_d/d at d=100",
+   "computed": "-0.052755541193",
+   "printed": "-0.052756",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "A_d/d at d=1000",
+   "computed": "-0.0576801113164",
+   "printed": "-0.057680",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "A_d/d at d=3000",
+   "computed": "-0.0582160389954",
+   "printed": "-0.058216",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.8 (iii)",
+   "what": "-1/(2 e pi)",
+   "computed": "-0.058549831524",
+   "printed": "-0.05855",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "-1/(2 e pi)",
+   "computed": "-0.0585498315243",
+   "printed": "-0.058550",
+   "criterion": "printed digits = rounded or truncated value",
+   "pass_kind": "rounded",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Int h_d(y/sqrt d) dy -> sqrt(2 pi), d=1000 (relative)",
+   "computed": "2.507255009933851087172021",
+   "printed": "2.506628274631000502415765",
+   "deviation": "0.00025",
+   "criterion": "relative deviation <= 0.158",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Int h_d(y/sqrt d) dy -> sqrt(2 pi), d=10000 (relative)",
+   "computed": "2.506690941121089695514704",
+   "printed": "2.506628274631000502415765",
+   "deviation": "2.5e-5",
+   "criterion": "relative deviation <= 0.05",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Sigma_D series equals -pi/[N_r sin(pi N_r)], d=4 (40 digits)",
+   "computed": "2.176559237081061420712894",
+   "printed": "2.176559237081061420712894",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Sigma_D series equals -pi/[N_r sin(pi N_r)], d=5 (40 digits)",
+   "computed": "2.094395102393195492308429",
+   "printed": "2.094395102393195492308429",
+   "deviation": "4.59e-41",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Sigma_D series equals -pi/[N_r sin(pi N_r)], d=6 (40 digits)",
+   "computed": "2.359475713710088646561356",
+   "printed": "2.359475713710088646561356",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "Sigma_D series equals -pi/[N_r sin(pi N_r)], d=9 (40 digits)",
+   "computed": "3.554306350526692997612705",
+   "printed": "3.554306350526692997612705",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-40",
+   "pass": true
+  },
+  {
+   "where": "main Sec. 2.8, SI Sec. S2",
+   "what": "main Eq. (32) vs Eq. (21) of Schlesier et al. (Hartree -> Ry), 17 values of d in [3.001, 3000], relative",
+   "computed": "3.346e-18",
+   "printed": "machine precision",
+   "criterion": "deviation found here <= printed bound 1.0e-15",
+   "pass": true
+  },
+  {
+   "where": "SI Sec. S2",
+   "what": "their large-d limit -D/(2 e pi^2) Ha is smaller in magnitude than -d/(4 e pi) Ha by pi/2",
+   "computed": "1.570796326794896619231322",
+   "printed": "1.570796326794896619231322",
+   "deviation": "0.0",
+   "criterion": "absolute deviation <= 1.0e-35",
+   "pass": true
+  }
+ ],
+ "table2": {
+  "4": {
+   "A_d": "-0.203253665705",
+   "schlesier_Ry": "-0.0392",
+   "ratio": "5.18504"
+  },
+  "5": {
+   "A_d": "-0.179749713937",
+   "schlesier_Ry": "-0.057",
+   "ratio": "3.1535"
+  },
+  "6": {
+   "A_d": "-0.197531134689",
+   "schlesier_Ry": "-0.0782",
+   "ratio": "2.52597"
+  },
+  "7": {
+   "A_d": "-0.227087341524",
+   "schlesier_Ry": "-0.1018",
+   "ratio": "2.23072"
+  },
+  "8": {
+   "A_d": "-0.262382732398",
+   "schlesier_Ry": "-0.1276",
+   "ratio": "2.05629"
+  },
+  "9": {
+   "A_d": "-0.301233692064",
+   "schlesier_Ry": "-0.1546",
+   "ratio": "1.94847"
+  }
+ }
+}
